@@ -1,0 +1,769 @@
+
+.logo{
+	position: absolute;
+	float: left;
+	z-index: 999;
+	width:124px;
+	height: 124px;
+	padding-top: 9px;
+
+}
+.topnav{
+	background: none;
+}
+.topnavbar .container{
+	margin-left: 107px !important;
+}
+.toggle-costume{
+	float: left;
+}
+
+#navbarontop{
+	padding-left: 312px;
+	padding-top: 17px;
+	height:69px; 
+}
+@font-face {
+  font-family: "BebasNeue Regular";
+    src: url(../source/fonts/BebasNeue-Regular.otf) format("truetype");
+}
+  #navbarontop > li > a {
+  	font-family: 'BebasNeue Regular';
+  	font-size: 17px;
+  	color: #313943;
+    padding-top: 5px;
+    padding-bottom: 6px;
+    margin-bottom: 22px;
+ 	padding-left: 10px;
+    padding-right: 10px!important;
+    margin-left: 34px;
+    border-bottom: 2px solid rgba(0,0,0,.0);
+
+  }
+  #navbarontop > li >a:hover{
+  	background-color: none!important;
+  	background: none!important;
+  	border-bottom: 2px solid #C59E47;
+  }
+ 
+
+ #navbarontop>button{
+ 	background: none;
+ 	background-color: none;
+ 	border: 2px solid #C59E47;
+ 	font-family: 'BebasNeue Regular';
+ 	margin-left: 60px;
+  	font-size: 16.99px;
+  	color: #313943;
+  	padding-left: 19px;
+  	padding-right: 19px;
+  	padding-top: -2px;
+  	padding-bottom:-2px;
+ }
+ #navbarontop>button:hover{
+ 	background-color: #C59E47;
+ 	color: #fff;
+ }
+ .dropdowncostume{
+ 	margin-left: 0px;
+ }
+ .navbar-default .toggle-costume:hover,
+.navbar-default .toggle-costume:focus {
+  background-color: #000;
+}
+.navbar-default .toggle-costume.icon-bar {
+  background-color: #fff;
+}
+.navbar-default .toggle-costume:hover .icon-bar {
+  background-color: #fff;
+}
+#navbarontop .open > a,
+#navbarontop .open > a:hover,
+#navbarontop .open > a:focus {
+	background-color: none!important;
+  border-color: #C59E47;
+}
+#navbarontop a:focus {
+  outline: none;
+  border-bottom: 2px solid #C59E47; 
+}
+.navbar-default .navbar-nav .open .dropdown-menu > li > a {
+	font-family: 'BebasNeue Regular';
+	font-size: 13pt;
+	color: #000;
+	background-color: rgba(255,255,255,.5);
+	text-align: center;
+
+}
+.navbar-default .navbar-nav .open .dropdown-menu > li > a:hover{
+	background-color: #fff;
+}
+.dropdown.open .dropdown-menu {
+    max-height: 200px;
+    opacity: 1;
+}
+
+ /*----------------- Navbar On Top Media screen -------------*/
+@media screen and (min-width: 320px) and (max-width: 480px){
+.dropdowncostume{
+	padding-left: 0px;
+	margin-left: 0px;
+}
+.topnavbar .container{
+	margin-left: 10px !important;
+}
+.logo{
+	position: absolute;
+	top:0px;
+	padding-top: 9px;
+	-webkit-transform: scale(0.5); /* Saf3.1+, Chrome */
+    -moz-transform: scale(0.5); /* FF3.5+ */
+    -ms-transform: scale(0.5); /* IE9 */
+    -o-transform: scale(0.5); /* Opera 10.5+ */
+     transform: scale(0.5);
+}
+.toggle-costume{
+	float: right;
+}
+#navbarontop{
+	 padding-left: 0px;
+	padding-top: 26px; 
+	height: 250px;
+}
+#navbarontop>li>a{
+	margin-left: 0px;
+	padding-left: 50px;
+	font-size: 13pt;
+	margin-bottom: 10px;
+
+}
+ #navbarontop>button{
+ 	margin-left:50px;
+ 
+ }
+.navbar-default .navbar-nav .open .dropdowncostume > li > a {
+	text-align: left;
+	margin-left: 40px;
+}
+#upmenu{
+	margin-bottom: 15px;
+}
+}
+@media screen and (min-width: 481px) and (max-width: 767px){
+.topnavbar .container{
+	margin-left: 10px !important;
+}
+.toggle-costume{
+float: right;
+}
+ #navbarontop>button{
+ 	margin-left:50px;
+ 
+ }
+
+.logo{
+	position: absolute;
+	top:10px;
+	padding-top: 9px;
+	-webkit-transform: scale(0.7); /* Saf3.1+, Chrome */
+    -moz-transform: scale(0.7); /* FF3.5+ */
+    -ms-transform: scale(0.7); /* IE9 */
+    -o-transform: scale(0.7); /* Opera 10.5+ */
+     transform: scale(0.7);
+}
+#navbarontop{
+	 padding-left: 0px;
+	padding-top: 40px; 
+	height: 250px;
+}
+#navbarontop>li>a{
+	margin-left: 0px;
+	padding-left: 50px;
+	font-size: 13pt;
+	margin-bottom: 10px;
+
+}
+.navbar-default .navbar-nav .open .dropdowncostume > li > a {
+	text-align: left;
+	margin-left: 40px;
+}
+#upmenu{
+	margin-bottom: 15px;
+}
+}
+@media screen and (min-width: 768px) and (max-width: 1199px){
+	.topnavbar .container {
+		margin-left: 50px !important;
+	}
+	#navbarontop{
+		padding-left: 25%;
+	}
+	#navbarontop > li > a {
+    padding-bottom: 6px;
+    margin-bottom: 22px;
+ 	padding-left: 0px;
+    padding-right: 0px!important;
+    margin-left: 20px;
+
+  }
+}
+
+
+
+/* ------------------------ End Navbar On Top -----------------*/
+/*------------------------- Start Carousel --------------------*/
+
+
+@font-face{
+	font-family: "OpenSans Semibold";
+	src: url(../source/fonts/OpenSans-Semibold.ttf) format("truetype");
+
+}
+.carousel-caption{
+	z-index: 999;
+}
+.carousel-caption>h2{
+	text-align: left;
+	font-family: 'OpenSans Semibold';
+	font-size: 25.12pt;
+	text-shadow: 0 0px 0px rgba(0, 0, 0, .0);
+
+}
+@font-face{
+	font-family: "OpenSans Regular";
+	src:url(../source/fonts/OpenSans-Regular.ttf) format("truetype");
+}
+.carousel-caption>h2>p{
+font-family: :'OpenSans Regular';
+font-size: 15.88pt;
+}
+.carousel-caption {
+    top: 35%;
+    left:13%;
+    right:auto;
+    bottom: auto;
+}
+
+@media screen and (min-width: 320px) and (max-width:767px){
+.carousel-caption>h2{
+	font-size: 13pt;
+}
+.carousel-caption {
+    top: 15%;
+
+}
+ 
+.carousel-caption>p{
+font-size: 10pt;
+}	
+}
+ 
+
+/* -----------------------------Second Navbar ---------------------------------------*/
+
+ 
+/*   ---------------------------   fetured cars   ---------------------------------    */
+@font-face{
+	font-family: "OpenSans-Light";
+	src: url(../source/fonts/OpenSans-Light.ttf) format("truetype");
+}
+/*.feturedsection>h1{
+	font-family: "OpenSans-Light";
+	font-size: 41px;
+	padding-top: 46px;
+	padding-bottom: 50px;
+	color: #020243;
+}*/
+
+/*.carstxt{
+	padding-left: 45px;
+	padding-right: 88px;
+}*/
+
+
+/*.bdots{
+	padding-right: 40px;
+} */
+
+/*Introduction part*/
+
+.row{
+	padding: 0px;
+	margin: 0px;
+	letter-spacing: 2px;
+	font-family: 'OpenSans-Light';
+	color: #020243;
+	font-size: 20px;
+}
+
+.intro{	
+	padding-left: 2%; 
+	margin-bottom: 2%;
+	background-image: url(../img/rec_border.png);
+	background-repeat:no-repeat;
+	background-size: 100% 100%; 
+	background-position: center;
+}
+
+.intro>h1{
+	font-family: 'OpenSans-Light';
+	letter-spacing: 3px;
+	font-size: 25px; 
+	padding-top: 2%; 
+	padding-bottom: 5%;
+}
+
+/*Decision tree question part*/
+.decQuestion{
+	/*width: 90%;
+	height: 80%;*/
+ /*   border: 1px solid; */
+    background-image: url(../img/rec_border.png);
+    background-repeat:no-repeat;
+    background-size: 100% 100%; 
+    background-position: center;
+    margin: 5%;
+}
+
+.decQuestion>h1{
+	font-family: 'OpenSans-Light';
+	letter-spacing: 3px;
+	font-size: 300%; 
+	padding: 10%;
+}
+
+/*Decision tree button part*/
+
+
+#decButton{
+	/*border: 2px solid;*/
+	/*padding-left: 10%; */
+	text-align: center;
+	/*height: 250px;*/
+}
+
+#decButton>button{
+ 	background: none;
+ 	background-color: none;
+ 	border: 2px solid #C59E47;
+ 	font-family: 'BebasNeue Regular';
+  	font-size: 25px;
+  	color: #313943;
+  	padding: 1.5%;
+  	margin:2%;
+ }
+
+ #decButton>button:hover{
+ 	background-color: #C59E47;
+ 	color: #fff;
+ }
+
+
+/*checkbox style*/
+#decButton>div{
+	text-align: left;
+}
+
+
+#decButton>div>label{
+	font-family: 'BebasNeue Regular';
+	letter-spacing: 2px;
+  	font-size: 20px;
+  	padding: 1.5%;
+  	margin-left: 2%;
+  	/*border: 1px solid #C59E47;*/
+}
+
+.check{
+	width: 20px;
+	height: 20px;
+}
+
+/*Login page*/
+.login-title>h1{
+	font-family: 'BebasNeue Regular';
+	letter-spacing: 10px;
+	font-size: 40px; 
+	padding-top: 2%; 
+	padding-bottom: 5%;
+}
+
+.login-content{
+	margin-right: 5%;
+	margin-left: 5%;
+	border-radius: 10px;
+	background-image: url(../img/rec_border.png);
+	background-repeat:no-repeat;
+	background-size: 70% 100%; 
+	background-position: center;
+	margin-bottom:5%;
+}
+
+
+
+/*  ------------------------------------  *Latest cars *   -----------------------------------   */
+.carimages{
+	 max-width: 100%;
+}
+.latestcars>h1{
+	font-family: 'BebasNeue Regular';
+	font-size: 45px;
+	letter-spacing: 10px;
+	padding-top: 66px;
+	padding-bottom: 70px;
+	color: #020243;
+}
+
+/*  -----------------     End Latest Cars Images    ------------------------ */
+/* ------------------ Newsletter Section -----------------------------------*/
+.newslettercontent{
+	position: relative;
+	width: 100%;
+	height: auto;
+}
+.leftside{
+	position: relative;
+}
+.leftside>img{
+	position: relative;
+	width:51.5%;
+	margin-top: 7%;
+	margin-left: 8.1%;
+	margin-bottom: 7%;
+	z-index: 99;
+}
+@font-face{
+  font-family: "OpenSans Bold";
+  src: url(../source/fonts/OpenSans-Bold.ttf) format("truetype");
+}
+.leftside>h1{
+	font-family: "OpenSans Bold";
+	top:39%;
+	left: 13.2%;
+	position: absolute;
+	font-size: 27px;
+	letter-spacing: 8px;
+	z-index: 100;
+	margin: 0px;
+}
+.leftside>p{
+	position: absolute;
+	font-family: "OpenSans Regular";
+	top:47.5%;
+	left: 13.2%;
+	font-size: 20px;
+	z-index: 100;
+	width: 35%;
+}
+.rightside{
+	position: absolute;
+	top:0;
+	left: 50%;
+	z-index: 1;
+}
+.rightside>img{
+	position: relative;
+	width: 100%;
+	padding-top: 4px;
+	z-index: 1;
+}
+.rightside>input{
+	position: absolute;
+	top:34%;
+	left:25%;
+	font-family: "OpenSans-Light";
+	font-size: 26.8px;
+	color:#fff;
+	background: none;
+	background-color: none;
+	border-top: none;
+	border-left: none;
+	border-right:none;
+	border-bottom: 1px solid #fff;	
+	border-radius: 0;
+	width: 53%;
+	padding: 0px;
+	z-index: 99;
+}
+#subemail:focus{
+	border-bottom: 1px solid #C7D7E5;
+	 box-shadow: inset 0 0px;
+
+	}
+#subemail::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    color:#fff;
+ 	line-height: 35px;
+}
+#subemail:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+   color:#fff;
+   opacity:  1;
+   line-height: 35px;
+}
+#subemail::-moz-placeholder { /* Mozilla Firefox 19+ */
+   color:#fff;
+   opacity:  1;
+   line-height: 35px;
+}
+#subemail:-ms-input-placeholder { /* Internet Explorer 10-11 */
+   color:#fff;
+   line-height: 35px;
+}
+
+.rightside>button{
+	position: absolute;
+	top:45%;
+	left:25%;
+	z-index: 99;
+	background: none;
+	border: 1px solid #fff;
+	font-family: "OpenSans-Light";
+	font-size: 31.5px;
+	color: #fff;
+	letter-spacing: 11px;
+	padding-left: 26.7px;
+	padding-right: 26.7px;
+	width: 53%;
+	height: 12%;
+}
+ .rightside>button:hover{
+ 	background:#fff;
+ 	color: #000;
+ 	-moz-transition: all .3s ease-in;
+    -o-transition: all .3s ease-in;
+    -webkit-transition: all .3s ease-in;
+    transition: all .2s ease-in;
+
+ }
+
+ @media screen and (max-width: 676px){
+.newslettercontent{
+	margin-bottom: 90%;
+}
+.rightside>button{
+	left:0%;
+	top:48%;
+	font-size: 31.5px;
+	margin-left: 10%;
+	width: 80%;
+}
+ .leftside>img{
+ 		transform:rotate(90deg);
+ 		width: 100%;
+ 		margin-left: 0%;
+ 		margin-top:30%;
+ 	}
+.leftside>h1{
+	font-size: 13px;
+	letter-spacing: 4px;
+	text-align: center;
+	top:14%;
+	left: 26%;
+}
+.leftside>p{
+	font-size: 12px;
+	top:25%;
+	left: 23%;
+	width: 55%!important;
+}
+.rightside{
+left:0;
+top:90%;
+}
+.rightside>input{
+width: 80%;
+margin-left: 10%;
+left: 0%;
+}
+}
+ @media screen and (max-width: 460px){
+ 	.rightside>button{
+ 		font-size: 26px;
+ 	}
+ }
+@media screen and (max-width:1200px){
+	.leftside>h1{
+		font-size: 16px;
+		top:25%;
+	}
+	.leftside>p{
+		font-size: 14px;
+		top:38%;
+		width: 30%;
+	}
+	.rightside>input{
+		font-size: 20px;
+	}
+	.rightside>button{
+	 	font-size: 27px;
+		letter-spacing: 3px;
+	}
+}
+/*-------------------------------------End Newsletter Section ----------------*/	
+/*-------------------------------------Bottom Menu -----------------------------------------------*/
+ .bottommenu{
+ 	position: relative;
+ 	top:60px;
+ }
+ .bottomlogo{
+ 	text-align: center;
+ }
+ .dotlogo{
+ 	font-size: 12px;
+ 	color: #C59E47;
+ 	padding-right: 78px;
+ 	padding-left: 78px;
+ }
+ .bottommenu>ul{
+ 	 padding-left: 13%;
+ 	 padding-top: 49px;
+ }
+ .bottommenu>ul>li>a{
+ 	font-family: "OpenSans Regular";
+ 	font-size: 17px;
+ 	letter-spacing: 4px;
+ 	color: #191919;
+ }
+  .bottommenu>ul>li>a:hover{
+  	background-color: none;
+  	background: none;
+  	border: none;
+  	font-family: "OpenSans Regular";
+ 	font-size: 17px;
+ 	letter-spacing: 4px;
+ 	color: #191919;
+  }
+  .bottomlinks{
+  	border: 0px;
+  }
+  .bottomlinks>li>a{
+  border: 0px;
+  }
+.bottomlinks > li > a:hover,
+.bottomlinks > li > a:focus {
+  background-color: transparent;
+  outline: none;
+}
+  .bottommenu>p{
+  	text-align: center;
+  	font-family: "OpenSans Regular";
+  	font-size: 13px;
+  	color: #707070;
+  	padding-top: 105px;
+  }
+ .bottommenu>img{
+ 	padding-left:50%; 
+ 	margin-left: -20px;
+ 	margin-bottom: 35px;
+ 	margin-top: 54px;
+ }
+.bottomsocial{
+	display: inline;
+	padding-left: 50%;
+	margin-left: -64px;
+	font-size: 20px;
+	color: #C59E47;
+
+}
+.bottomsocial>a{
+	color: #C59E47;
+	padding-right: 20px;
+}
+.bottomsocial>a:hover{
+	color: #191919;
+}
+.bottomsocial>a>i{
+	margin-bottom: 20px;
+}
+@media screen and (min-width:320px) and (max-width:359px){
+	.bottommenu{
+		top:30px;
+	}
+  	.bottommenu>p{
+  		font-size: 12px;
+  		padding-top: 20px;
+  	}
+  	.bottommenu>ul{
+  		padding-left: 0px;
+  	}
+  	.bottomlinks>{
+  		padding-left: 20px;
+
+  	}
+  	.bottomlinks>li>a{
+  		
+
+  	}
+  	.bottomlinks>li{
+  	float: none;
+  text-align: center;
+  		 
+  	}
+  	.bottommenu>img{
+  		margin-bottom: 15px;
+  		margin-top: 15px;
+  	}
+  	 .dotlogo{
+ 
+ 	padding-right: 15px;
+ 	padding-left: 15px;
+ }
+  }
+ @media screen and (min-width:360px) and (max-width:480px){
+  	.bottommenu>p{
+  		font-size: 12px;
+  		padding-top: 20px;
+  	}
+  	.bottommenu>ul{
+  		padding-left: 20px;
+  	}
+  	.bottomlinks>{
+  		padding-left: 20px;
+
+  	}
+  	.bottomlinks>li>a{
+  		
+
+  	}
+  	.bottomlinks>li{
+  	float: none;
+  	text-align: center;
+  		 
+  	}
+  	.bottommenu>img{
+  		margin-bottom: 15px;
+  		margin-top: 15px;
+  	}
+  	 .dotlogo{
+ 
+ 	padding-right: 15px;
+ 	padding-left: 15px;
+ }
+  }
+ @media screen and (min-width: 481px) and (max-width: 1200px){
+ .bottommenu>ul{
+ 	padding-left: 30px;
+ 	float: none;
+ }
+  	.dotlogo{
+ 
+ 	padding-right: 30px;
+ 	padding-left: 30px;
+ }	
+   	.bottomlinks>li{
+  	float: none;
+  	text-align: center;
+  		 
+  	}
+  .bottommenu{
+  	top:0px;
+  }
+ }
+ 
+
+
+
+@font-face{
+	font-family: "Roboto Light";
+	src: url(../source/fonts/Roboto-Light.ttf) format("truetype");
+
+}
