@@ -33,7 +33,7 @@
 						<ul class="dropdown-menu dropdowncostume" style="background: #f7d26e">
 							<li><a href="m_login.html">Login/Sign up</a></li>
 							<li><a href="#">Your Tree</a></li>
-							<li><a href="#">Update preference</a></li>
+							<li><a href="#">Update your preference</a></li>
 						</ul>
 				</li>
 				<li><a href="contact.html">CONTACT US</a></li>
@@ -48,14 +48,35 @@
     		<h1 class="text-center" id="1" style="display: block;">What is your current challenge for marketing?</h1>
     		<!-- second layer -->
     		<h1 class="text-center" id="1_1" style="display: none;">Do you have customer data?/Do you need to research customers?</h1>
-    		<h1 class="text-center" id="1_2" style="display: none;">Do you have customer data?/Do you need to research customers?</h1>
+    		<h1 class="text-center" id="1_2" style="display: none;">In progress</h1>
     		<h1 class="text-center" id="1_3" style="display: none;">What are the current channels to communicate with customers?</h1>
     		<!-- third layer -->
-    		<h1 class="text-center" id="1_1_1" style="display: none;">In your customer database, which of the follwing data do you have of your cusomers?</h1>
+    		<h1 class="text-center" id="1_1_1" style="display: none;">In your customer database, which of the following data do you have of your customers?</h1>
     		<h1 class="text-center" id="1_1_2" style="display: none;">Node 0: Customer  Research e.g. ZOHO Survey; SurveyMonkey</h1>
     		<!-- forth layer -->
     		<h1 class="text-center" id="1_1_1_1" style="display: none;">Node 1: Freelance content creation platform (ex Fiver; Visually; Scripted)</h1>
-    		<h1 class="text-center" id="1_1_1_2" style="display: none;">Node 2: A.Direct marketing, (ex. FL.AG, PostcardMania) B. cold call, e.g. Dialogtech, invoca;  C. Flyers, Billboards etc. (ex. Visage, Canva)</h1>
+        <h1 class="text-center" id="1_1_1_2" style="display: none;">Node 2: Mailing and phone number list segmentation e.g USAdata, Peachtree data</h1>
+    		
+        <!-- Multiple outcome nodes currently not showing -->
+        <!-- <h1 class="text-center" id="1_1_1_2" style="display: none; background: white;">
+        <div style="margin-left: -25%; width: 1300px;">
+          <div class="col-md-4 node-style" >Direct marketing</div>
+          <div class="col-md-4 node-style">Cold call</div>
+          <div class="col-md-4 node-style">Flyers, Billboards etc.</div>
+        </div>
+        <div style="margin-left: -25%; width: 1300px;">
+          <div class="col-md-4 tech-style" >FL.AG</div>
+          <div class="col-md-4 tech-style" >Dialogtech</div>
+          <div class="col-md-4 tech-style" >Visage</div>
+        </div>
+        <div style="margin-left: -25%; width: 1300px;">
+          <div class="col-md-4 tech-style" >PostcardMania</div>
+          <div class="col-md-4 tech-style" >invoca</div>
+          <div class="col-md-4 tech-style" >Canva</div>
+        </div>
+        </h1> -->
+        <!-- end -->
+
     		<h1 class="text-center" id="1_1_1_3" style="display: none;">Node 3: Develop website to generate conversions/leads (emails) e.g. Capotora, leadspace</h1>
     		<h1 class="text-center" id="1_1_1_4" style="display: none;">Node 4: Customer segmentation, e.g. Custora; Segment; Social media analysis monitoring and social listening, e.g, radiant6; Brandwatch</h1>
     		<h1 class="text-center" id="1_1_1_5" style="display: none;">Node 5: Data cleaning and enrichment, e.g. Clearbit, zoominfo; data centralization, e.g. Agilone, GoSquared</h1>
@@ -65,14 +86,19 @@
 
     		<!-- CCR second layer -->
     		<h1 class="text-center" id="1_3_1" style="display: none;">Node: Email Marketing Technologies (e.g. Iterable; Emma; Mad MIMI; Mail Chimp; Movable Ink)</h1>
-    		<h1 class="text-center" id="1_3_2" style="display: none;">In progress</h1>
+    		<h1 class="text-center" id="1_3_2" style="display: none;">What are the usual social media platform you use to convey your message?</h1>
     		<h1 class="text-center" id="1_3_3" style="display: none;">Node: Mobile Relationship Manament. e.g. KAHUNA; Urban Airship</h1>
     		<h1 class="text-center" id="1_3_4" style="display: none;">Node: Event Marketing. e.g. CVENT; EVENTKLOUD</h1>
-    		<h1 class="text-center" id="1_3_5" style="display: none;">Node: Community Engagement Management e.g. Linqia; Insightpool</h1>
+    		<h1 class="text-center" id="1_3_5" style="display: none;">Node: Community Engagement Management e.g. Linqia; Insightpool</h1>  
 
 
-    		
+        <!--social media -->
+        <h1 class="text-center" id="1_3_2_3" style="display: none;"> Node: Video Marketing. e.g. Animoto; Ustudio; Vidyard</h1>
+       
     	</div>
+
+
+
 <!-- buttons -->
   <div>
 		<div id="decButton" class="1_button">
@@ -84,6 +110,8 @@
 		<div id="decButton" class="1_1_button" style="display: none;">
 			<button onclick="show_content('1_1_1')"><span class="postnewcar">Yes</span></button>
 			<button onclick="show_content('1_1_2')"><span class="postnewcar">No</span></button>
+      <button onclick="return_content('1_1')"><span class="postnewcar">Return</span></button>
+      <!-- <button onclick="window.location.href='decision_tree.html'"><span class="postnewcar">Start over</span></button> -->
 		</div>
 
 		<div id="decButton" class="1_1_1_button" style="display: none;">
@@ -100,6 +128,8 @@
       </div>
 
 			<button onclick="showCheck('check')"><span class="postnewcar">Continue</span></button>
+      <button onclick="return_content('1_1_1')"><span class="postnewcar">Return</span></button>
+      <!-- <button onclick="window.location.href='decision_tree.html'"><span class="postnewcar">Start over</span></button> -->
 		</div>
 <!-- branch 3 answer to question -->
 		<div id="decButton" class="1_3_button" style="display: none;">
@@ -108,11 +138,71 @@
 			<button onclick="show_content('1_3_3')"><span class="postnewcar">Mobile</span></button>
 			<button onclick="show_content('1_3_4')"><span class="postnewcar">Events/Webnar</span></button>
 			<button onclick="show_content('1_3_5')"><span class="postnewcar">Customer Community</span></button>
+      <button onclick="return_content('1_3')"><span class="postnewcar">Return</span></button>
+      <!-- <button onclick="window.location.href='decision_tree.html'"><span class="postnewcar">Start over</span></button> -->
 		</div>
 
-		</div>
+
+    <div id="decButton" class="1_3_2_button" style="display: none;">
+      <button onclick="show_content('1_3_2_1')"><span class="postnewcar">Facebook</span></button>
+      <button onclick="show_content('1_3_2_2')"><span class="postnewcar">Instagram</span></button>
+      <button onclick="show_content('1_3_2_3')"><span class="postnewcar">YouTube</span></button>
+      <button onclick="show_content('1_3_2_4')"><span class="postnewcar">Pinterest</span></button>
+      <button onclick="show_content('1_3_2_5')"><span class="postnewcar">Twitter</span></button>
+      <button onclick="show_content('1_3_2_6')"><span class="postnewcar">Other</span></button>
+      <button onclick="return_content('1_3_2')"><span class="postnewcar">Return</span></button>
+    </div
+
+
+<!-- branch 2 answer to question -->
+  <div id="decButton" class="1_2_button" style="display: none;">
+      <!--  -->
+    <button onclick="return_content('1_2')"><span class="postnewcar">Return</span></button>
+  </div>
+
+
+  <!-- return button for nodes -->
+
+  <div id="decButton" class="1_1_2_button" style="display: none;">
+    <button onclick="return_content('1_1_2')"><span class="postnewcar">Return</span></button>  <!--  node 0 -->
+  </div>
+
+  <div id="decButton" class="1_1_1_1_button" style="display: none;">
+     <button onclick="return_content('1_1_1_1')"><span class="postnewcar">Return</span></button>  <!-- node 1 -->
+  </div>
+
+  <div id="decButton" class="1_1_1_2_button" style="display: none;">
+    <button onclick="return_content('1_1_1_2')"><span class="postnewcar">Return</span></button>    <!-- node 2 -->
+  </div>
+
+  <div id="decButton" class="1_1_1_3_button" style="display: none;">
+    <button onclick="return_content('1_1_1_3')"><span class="postnewcar">Return</span></button>    <!-- node 3 -->
+  </div>
+
+  <div id="decButton" class="1_1_1_4_button" style="display: none;">
+    <button onclick="return_content('1_1_1_4')"><span class="postnewcar">Return</span></button>    <!-- node 4 -->
+  </div>
+
+  <div id="decButton" class="1_1_1_5_button" style="display: none;">
+    <button onclick="return_content('1_1_1_5')"><span class="postnewcar">Return</span></button>    <!-- node 5 -->
+  </div>
+
+  <div id="decButton" class="1_1_1_6_button" style="display: none;">
+    <button onclick="return_content('1_1_1_6')"><span class="postnewcar">Return</span></button>    <!-- node 6 -->
+  </div>
+
+  <div id="decButton" class="1_1_1_7_button" style="display: none;">
+    <button onclick="return_content('1_1_1_7')"><span class="postnewcar">Return</span></button>    <!-- node 7 -->
+  </div>
+
+  <div id="decButton" class="1_1_1_8_button" style="display: none;">
+    <button onclick="return_content('1_1_1_8')"><span class="postnewcar">Return</span></button>    <!-- node 8 -->
+  </div>
+
+
+	</div>
 </div>
-<!-- ___________________Bottom Menu ____________________-->
+<!-- ___________________Bottom Menu ____________________ -->
 		<div class="bottomlogo">
 		<a href="index.html"><span class="dotlogo">&bullet;</span><img src="img/MarTTree.png" width="400" height="200" alt="logo"><span class="dotlogo">&bullet;</span></a>
 		</div>
@@ -140,7 +230,7 @@
   		
   		len = id.toString().length;
   		parent_id = id.toString().substring(0,id.toString().length-2);
-  		console.log(parent_id);
+  		console.log("Remove content of id(parent): " + parent_id);
   		document.getElementById(parent_id).style.display='none';
   		button_id = parent_id + "_button";
   		document.getElementsByClassName(button_id)[0].style.display='none';
@@ -148,13 +238,25 @@
   		document.getElementsByClassName(this_button_id)[0].style.display='block'
   	}
 
+    function return_content(id){
+      document.getElementById(id).style.display='none';
+      len = id.toString().length;
+      parent_id = id.toString().substring(0,id.toString().length-2);
+      console.log("Display the content of id(parent): " + parent_id);
+      document.getElementById(parent_id).style.display='block';
+      button_id = parent_id + "_button";
+      document.getElementsByClassName(button_id)[0].style.display='block';
+      this_button_id = id + "_button";
+      document.getElementsByClassName(this_button_id)[0].style.display='none'
+    }
+
   	function showCheck(name){
   		boxes = document.getElementsByClassName(name);
   		if(boxes[0].checked){
-  			if(boxes[1].checked && boxes[2].checked){
-  				if(boxes[3].checked &&  boxes[4].checked && boxes[5].checked){
-  					if(boxes[6].checked){
-  						if(boxes[7].checked){
+  			if(boxes[1].checked){
+  				if(boxes[2].checked &&  boxes[3].checked && boxes[4].checked){
+  					if(boxes[5].checked){
+  						if(boxes[6].checked){
   							// node 8
   							show_content('1_1_1_8');
   						}
