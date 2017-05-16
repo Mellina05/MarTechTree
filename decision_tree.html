@@ -1,0 +1,213 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>MarTech Tree</title>
+	<meta name="description" content="">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="source/bootstrap-3.3.6-dist/css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="source/font-awesome-4.5.0/css/font-awesome.css">
+	<link rel="stylesheet" type="text/css" href="style/slider.css">
+	<link rel="stylesheet" type="text/css" href="style/mystyle.css">
+	<link rel="shortcut icon" type="image/png" href="img/tree-big.png"/>
+</head>
+<body>
+<!-- Header -->
+<div style="border: 2px solid #f3bf30; height: 150px; margin-bottom: 5%; background-color: #f3bf30;">
+	<a class="navbar-brand logo" href="index.html"><img src="img/MarTTree.png" width="220" height="120" alt="logo"></a>
+	<div class="collapse navbar-collapse" id="upmenu" style="margin-top: 3%;">
+			<ul class="nav navbar-nav" id="navbarontop">
+				<li class="active"><a href="index.html">HOME</a></li>
+				<li class="dropdown">
+					<a href="#" class="dropdown-toggle"	data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Vendors<span class="caret"></span></a>
+					<ul class="dropdown-menu dropdowncostume" style="background: #f7d26e">
+						<li><a href="v_login.html">Login/Sign up</a></li>
+						<li><a href="#">Post new product</a></li>
+						<li><a href="#">View Profile</a></li>
+					</ul>
+				</li>
+				<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Marketers<span class="caret"></span></a>
+						<ul class="dropdown-menu dropdowncostume" style="background: #f7d26e">
+							<li><a href="m_login.html">Login/Sign up</a></li>
+							<li><a href="#">Your Tree</a></li>
+							<li><a href="#">Update preference</a></li>
+						</ul>
+				</li>
+				<li><a href="contact.html">CONTACT US</a></li>
+				<button onclick="window.location.href='decision_tree.html'"><span class="postnewcar">BUILD YOUR TREE</span></button>
+			</ul>
+	</div>
+</div>
+
+<!-- Question panel -->
+<div class="container" style="margin-bottom: 5%;">
+    	<div class="decQuestion" id="question">
+    		<h1 class="text-center" id="1" style="display: block;">What is your current challenge for marketing?</h1>
+    		<!-- second layer -->
+    		<h1 class="text-center" id="1_1" style="display: none;">Do you have customer data?/Do you need to research customers?</h1>
+    		<h1 class="text-center" id="1_2" style="display: none;">Do you have customer data?/Do you need to research customers?</h1>
+    		<h1 class="text-center" id="1_3" style="display: none;">What are the current channels to communicate with customers?</h1>
+    		<!-- third layer -->
+    		<h1 class="text-center" id="1_1_1" style="display: none;">In your customer database, which of the follwing data do you have of your cusomers?</h1>
+    		<h1 class="text-center" id="1_1_2" style="display: none;">Node 0: Customer  Research e.g. ZOHO Survey; SurveyMonkey</h1>
+    		<!-- forth layer -->
+    		<h1 class="text-center" id="1_1_1_1" style="display: none;">Node 1: Freelance content creation platform (ex Fiver; Visually; Scripted)</h1>
+    		<h1 class="text-center" id="1_1_1_2" style="display: none;">Node 2: A.Direct marketing, (ex. FL.AG, PostcardMania) B. cold call, e.g. Dialogtech, invoca;  C. Flyers, Billboards etc. (ex. Visage, Canva)</h1>
+    		<h1 class="text-center" id="1_1_1_3" style="display: none;">Node 3: Develop website to generate conversions/leads (emails) e.g. Capotora, leadspace</h1>
+    		<h1 class="text-center" id="1_1_1_4" style="display: none;">Node 4: Customer segmentation, e.g. Custora; Segment; Social media analysis monitoring and social listening, e.g, radiant6; Brandwatch</h1>
+    		<h1 class="text-center" id="1_1_1_5" style="display: none;">Node 5: Data cleaning and enrichment, e.g. Clearbit, zoominfo; data centralization, e.g. Agilone, GoSquared</h1>
+    		<h1 class="text-center" id="1_1_1_6" style="display: none;">Node 6: Tag management, e.g. Google Analytics; Usability Testing, e.g. Litmus</h1>
+    		<h1 class="text-center" id="1_1_1_7" style="display: none;">Node 7: Mobile App development; DMP management; Dashboard/ visualization, e.g. Gackoboard; Domo</h1>
+    		<h1 class="text-center" id="1_1_1_8" style="display: none;">Note 8: DMP; Multichannel Analytics; Mobile and app analytics (ex Localytics; Appboy). e.g. DataXu; Lotame</h1>
+
+    		<!-- CCR second layer -->
+    		<h1 class="text-center" id="1_3_1" style="display: none;">Node: Email Marketing Technologies (e.g. Iterable; Emma; Mad MIMI; Mail Chimp; Movable Ink)</h1>
+    		<h1 class="text-center" id="1_3_2" style="display: none;">In progress</h1>
+    		<h1 class="text-center" id="1_3_3" style="display: none;">Node: Mobile Relationship Manament. e.g. KAHUNA; Urban Airship</h1>
+    		<h1 class="text-center" id="1_3_4" style="display: none;">Node: Event Marketing. e.g. CVENT; EVENTKLOUD</h1>
+    		<h1 class="text-center" id="1_3_5" style="display: none;">Node: Community Engagement Management e.g. Linqia; Insightpool</h1>
+
+
+    		
+    	</div>
+<!-- buttons -->
+  <div>
+		<div id="decButton" class="1_button">
+			<button onclick="show_content('1_1')"><span>Understand/Analyze Customers</span></button>
+			<button onclick="show_content('1_2')"><span>New Customer Acquisition</span></button>
+			<button onclick="show_content('1_3')"><span>Current Customer Retention</span></button>	
+		</div>
+
+		<div id="decButton" class="1_1_button" style="display: none;">
+			<button onclick="show_content('1_1_1')"><span class="postnewcar">Yes</span></button>
+			<button onclick="show_content('1_1_2')"><span class="postnewcar">No</span></button>
+		</div>
+
+		<div id="decButton" class="1_1_1_button" style="display: none;">
+      <div style="border: 2px solid #C59E47;">
+			<label><input type="checkbox" class="check" id="check_1">Store Transaction</label>
+			<label><input type="checkbox" class="check" id="check_2">Phone Number and/or Address</label>
+			<label><input type="checkbox" class="check" id="check_3">Email Address</label>
+			<label><input type="checkbox" class="check" id="check_4">Online Transaction</label>
+			<label><input type="checkbox" class="check" id="check_5">Social Media </label>
+			<label><input type="checkbox" class="check" id="check_6">Customer Web Activity </label>
+			<label><input type="checkbox" class="check" id="check_7">Customer App Activity </label>
+			<label><input type="checkbox" class="check" id="check_8">Customer Loyalty Program </label>
+			<label><input type="checkbox" class="check" id="check_9">High budget(above XXX) </label>
+      </div>
+
+			<button onclick="showCheck('check')"><span class="postnewcar">Continue</span></button>
+		</div>
+<!-- branch 3 answer to question -->
+		<div id="decButton" class="1_3_button" style="display: none;">
+			<button onclick="show_content('1_3_1')"><span class="postnewcar">Email</span></button>
+			<button onclick="show_content('1_3_2')"><span class="postnewcar">Social Media</span></button>
+			<button onclick="show_content('1_3_3')"><span class="postnewcar">Mobile</span></button>
+			<button onclick="show_content('1_3_4')"><span class="postnewcar">Events/Webnar</span></button>
+			<button onclick="show_content('1_3_5')"><span class="postnewcar">Customer Community</span></button>
+		</div>
+
+		</div>
+</div>
+<!-- ___________________Bottom Menu ____________________-->
+		<div class="bottomlogo">
+		<a href="index.html"><span class="dotlogo">&bullet;</span><img src="img/MarTTree.png" width="400" height="200" alt="logo"><span class="dotlogo">&bullet;</span></a>
+		</div>
+		<div class="bottommenu" style="background: #f3bf30">
+			<ul class="nav nav-tabs bottomlinks" style="padding-top: 1%">
+			<li role="presentation" ><a href="#/" role="button">ABOUT US</a></li>
+			<li role="presentation"><a href="#/">MARTECH TREE</a></li>
+			<li role="presentation"><a href="#/">DECISION TREE</a></li>
+			<li role="presentation"><a href="contact.html">CONTACT US</a></li>
+		</ul>
+		<p style="padding-top: 1%; margin-bottom: 1%">"Our Motto"</p>
+		 <img style="padding-top: 1%;margin-top: 1%" src="img/line.png" alt="line"> <br>
+		 <div class="bottomsocial">
+		 	<a href="#"><i class="fa fa-facebook"></i></a>
+			<a href="#"><i class="fa fa-twitter"></i></a>
+			<a href="#"><i class="fa fa-google-plus"></i></a>
+			<a href="#"><i class="fa fa-pinterest"></i></a>
+		</div>
+			
+		</div>
+
+<script type="text/javascript">
+	function show_content(id){
+  		document.getElementById(id).style.display='block';
+  		
+  		len = id.toString().length;
+  		parent_id = id.toString().substring(0,id.toString().length-2);
+  		console.log(parent_id);
+  		document.getElementById(parent_id).style.display='none';
+  		button_id = parent_id + "_button";
+  		document.getElementsByClassName(button_id)[0].style.display='none';
+  		this_button_id = id + "_button";
+  		document.getElementsByClassName(this_button_id)[0].style.display='block'
+  	}
+
+  	function showCheck(name){
+  		boxes = document.getElementsByClassName(name);
+  		if(boxes[0].checked){
+  			if(boxes[1].checked && boxes[2].checked){
+  				if(boxes[3].checked &&  boxes[4].checked && boxes[5].checked){
+  					if(boxes[6].checked){
+  						if(boxes[7].checked){
+  							// node 8
+  							show_content('1_1_1_8');
+  						}
+  						else{
+  							if(boxes[8].checked){
+  								show_content('1_1_1_7');
+
+  							}
+  							else{
+  								show_content('1_1_1_6');
+
+  							}
+  							//node 6.7
+  						}
+
+  					}
+  					else{
+  						if(boxes[8].checked){
+  							show_content('1_1_1_5');
+
+  						}
+  						else{
+  							show_content('1_1_1_4');
+  						}
+  						// if b 4,5
+  					}
+  				}
+  				else{
+  					if(boxes[8].checked){
+  						show_content('1_1_1_3');
+
+  						}
+  						else{
+  							show_content('1_1_1_2');
+  						}
+  					// if budgets 2,3
+  				}
+
+  			}
+  			else{
+  				// display node 1
+  				show_content('1_1_1_1');
+  			}
+
+  		}
+  	}
+
+</script>		
+
+<script type="text/javascript" src="source/bootstrap-3.3.6-dist/js/jquery.js"></script>
+<script type="text/javascript" src="source/js/isotope.js"></script>
+<script type="text/javascript" src="source/js/myscript.js"></script> 
+<script type="text/javascript" src="source/bootstrap-3.3.6-dist/js/jquery.1.11.js"></script>
+<script type="text/javascript" src="source/bootstrap-3.3.6-dist/js/bootstrap.js"></script>
+</body>
+</html>
