@@ -47,15 +47,17 @@
     	<div class="decQuestion" id="question">
     		<h1 class="text-center" id="1" style="display: block;">What is your current challenge for marketing?</h1>
     		<!-- second layer -->
-    		<h1 class="text-center" id="1_1" style="display: none;">Do you have customer data?</h1>
+    		<h1 class="text-center" id="1_1" style="display: none;">Would you like to understand more about your customers?</h1>
     		<h1 class="text-center" id="1_2" style="display: none;">In progress</h1>
     		<h1 class="text-center" id="1_3" style="display: none;">What are the current channels to communicate with customers?</h1>
     		<!-- third layer -->
-    		<h1 class="text-center" id="1_1_1" style="display: none;">In your customer database, which of the following data do you have of your customers?</h1>
-    		<h1 class="text-center" id="1_1_2" style="display: none;">Node 0: Customer  Research e.g. ZOHO Survey; SurveyMonkey</h1>
+    		<h1 class="text-center" id="1_1_1" style="display: none;">What is your current customer data?</h1>
+    		<h1 class="text-center" id="1_1_2" style="display: none;">Industry reports and trends</h1>
+        <h1 class="text-center" id="1_1_2_1" style="display: none;">Please input your industry field</h1>
     		<!-- forth layer -->
-    		<h1 class="text-center" id="1_1_1_1" style="display: none;">Node 1: Freelance content creation platform (ex Fiver; Visually; Scripted)</h1>
-        <h1 class="text-center" id="1_1_1_2" style="display: none;">Node 2: Mailing and phone number list segmentation e.g USAdata, Peachtree data</h1>
+        <h1 class="text-center" id="1_1_1_0" style="display: none;">Would you like to build your customer database? <br> Way to build: CRM, Customer database management tool </h1>
+    		<h1 class="text-center" id="1_1_1_1" style="display: none;">Data analysis(descriptive/predictive)</h1>
+        <h1 class="text-center" id="1_1_1_2" style="display: none;">Node 2: Demographic Segmentation</h1>
     		
         <!-- Multiple outcome nodes currently not showing -->
         <!-- <h1 class="text-center" id="1_1_1_2" style="display: none; background: white;">
@@ -77,12 +79,12 @@
         </h1> -->
         <!-- end -->
 
-    		<h1 class="text-center" id="1_1_1_3" style="display: none;">Node 3: Develop website to generate conversions/leads (emails) e.g. Capotora, leadspace</h1>
-    		<h1 class="text-center" id="1_1_1_4" style="display: none;">Node 4: Customer segmentation, e.g. Custora; Segment; Social media analysis monitoring and social listening, e.g, radiant6; Brandwatch</h1>
-    		<h1 class="text-center" id="1_1_1_5" style="display: none;">Node 5: Data cleaning and enrichment, e.g. Clearbit, zoominfo; data centralization, e.g. Agilone, GoSquared</h1>
-    		<h1 class="text-center" id="1_1_1_6" style="display: none;">Node 6: Tag management, e.g. Google Analytics; Usability Testing, e.g. Litmus</h1>
-    		<h1 class="text-center" id="1_1_1_7" style="display: none;">Node 7: Mobile App development; DMP management; Dashboard/ visualization, e.g. Gackoboard; Domo</h1>
-    		<h1 class="text-center" id="1_1_1_8" style="display: none;">Note 8: DMP; Multichannel Analytics; Mobile and app analytics (ex Localytics; Appboy). e.g. DataXu; Lotame</h1>
+    		<h1 class="text-center" id="1_1_1_3" style="display: none;">What would you like to analysis and evaluate your email marketing result in the future?</h1>
+    		<h1 class="text-center" id="1_1_1_4" style="display: none;">Social listening</h1>
+    		<h1 class="text-center" id="1_1_1_5" style="display: none;">Website analysis tool</h1>
+    		<h1 class="text-center" id="1_1_1_6" style="display: none;">App analysis</h1>
+    		<!-- <h1 class="text-center" id="1_1_1_7" style="display: none;">Node 7: Mobile App development; DMP management; Dashboard/ visualization, e.g. Gackoboard; Domo</h1>
+    		<h1 class="text-center" id="1_1_1_8" style="display: none;">Note 8: DMP; Multichannel Analytics; Mobile and app analytics (ex Localytics; Appboy). e.g. DataXu; Lotame</h1> -->
 
     		<!-- CCR second layer -->
     		<h1 class="text-center" id="1_3_1" style="display: none;">Node: Email Marketing Technologies (e.g. Iterable; Emma; Mad MIMI; Mail Chimp; Movable Ink)</h1>
@@ -94,7 +96,7 @@
 
         <!--social media -->
         <h1 class="text-center" id="1_3_2_3" style="display: none;"> Node: Video Marketing. e.g. Animoto; Ustudio; Vidyard</h1>
-       
+    
     	</div>
 
 
@@ -108,8 +110,8 @@
 		</div>
 
 		<div id="decButton" class="1_1_button" style="display: none;">
-			<button onclick="show_content('1_1_1')"><span class="postnewcar">Yes</span></button>
-			<button onclick="show_content('1_1_2')"><span class="postnewcar">No</span></button>
+			<button onclick="show_content('1_1_1')"><span class="postnewcar">Current Customer</span></button>
+			<button onclick="show_content('1_1_2')"><span class="postnewcar">Potential Customer</span></button>
       <button onclick="return_content('1_1')"><span class="postnewcar">Return</span></button>
       <!-- <button onclick="window.location.href='decision_tree.html'"><span class="postnewcar">Start over</span></button> -->
 		</div>
@@ -118,19 +120,27 @@
       <div style="border: 2px solid #C59E47;">
 			<label><input type="checkbox" class="check" id="check_1">Store Transaction</label>
 			<label><input type="checkbox" class="check" id="check_2">Phone Number and/or Address</label>
-			<label><input type="checkbox" class="check" id="check_3">Email Address</label>
-			<label><input type="checkbox" class="check" id="check_4">Online Transaction</label>
-			<label><input type="checkbox" class="check" id="check_5">Social Media </label>
-			<label><input type="checkbox" class="check" id="check_6">Customer Web Activity </label>
-			<label><input type="checkbox" class="check" id="check_7">Customer App Activity </label>
-			<label><input type="checkbox" class="check" id="check_8">Customer Loyalty Program </label>
-			<label><input type="checkbox" class="check" id="check_9">High budget(above XXX) </label>
+			<label><input type="checkbox" class="check" id="check_3">Email Address and Online Transaction</label>
+			<!-- <label><input type="checkbox" class="check" id="check_4">Online Transaction</label> -->
+			<label><input type="checkbox" class="check" id="check_4">Social Media </label>
+			<label><input type="checkbox" class="check" id="check_5">Customer Web Activity </label>
+			<label><input type="checkbox" class="check" id="check_6">Customer App Activity </label>
+			<!-- <label><input type="checkbox" class="check" id="check_7">Customer Loyalty Program </label> -->
+			<!-- <label><input type="checkbox" class="check" id="check_9">High budget(above XXX) </label> -->
       </div>
-
+      <button onclick="show_content('1_1_1_0')"><span class="postnewcar">None</span></button>
 			<button onclick="showCheck('check')"><span class="postnewcar">Continue</span></button>
       <button onclick="return_content('1_1_1')"><span class="postnewcar">Return</span></button>
       <!-- <button onclick="window.location.href='decision_tree.html'"><span class="postnewcar">Start over</span></button> -->
 		</div>
+
+    <!-- 1_1_1_3 -->
+    <div id="decButton" class="1_1_1_3_button" style="display: none;">
+      <button onclick="show_content()"><span class="postnewcar">Acquisition</span></button>
+      
+      <!-- <button onclick="window.location.href='decision_tree.html'"><span class="postnewcar">Start over</span></button> -->
+    </div>
+
 <!-- branch 3 answer to question -->
 		<div id="decButton" class="1_3_button" style="display: none;">
 			<button onclick="show_content('1_3_1')"><span class="postnewcar">Email</span></button>
@@ -164,7 +174,9 @@
   <!-- return button for nodes -->
 
   <div id="decButton" class="1_1_2_button" style="display: none;">
-    <button onclick="return_content('1_1_2')"><span class="postnewcar">Return</span></button>  <!--  node 0 -->
+    <button onclick=""><span class="postnewcar">Yes</span></button>  
+    <button onclick="show_content('1_1_2_1')"><span class="postnewcar">No</span></button>  
+    <button onclick="return_content('1_1_2')"><span class="postnewcar">Return</span></button>  
   </div>
 
   <div id="decButton" class="1_1_1_1_button" style="display: none;">
@@ -256,57 +268,33 @@
 
   	function showCheck(name){
   		boxes = document.getElementsByClassName(name);
-  		if(boxes[0].checked){
-  			if(boxes[1].checked){
-  				if(boxes[2].checked &&  boxes[3].checked && boxes[4].checked){
-  					if(boxes[5].checked){
-  						if(boxes[6].checked){
-  							// node 8
-  							show_content('1_1_1_8');
-  						}
-  						else{
-  							if(boxes[8].checked){
-  								show_content('1_1_1_7');
+  		if(boxes[0].checked){ // ST
+  			if(boxes[1].checked){ //phone and add
+  				if(boxes[2].checked){ // email and OT
+            show_content('1_1_1_3');
+          }
+          else{
+            show_content('1_1_1_2');
+          }
+        }
+        else{
+          show_content('1_1_1_1');
+        }
+      }
+      else{
+        if(boxes[3].checked){
+          show_content('1_1_1_4');
 
-  							}
-  							else{
-  								show_content('1_1_1_6');
+        }
+        else if(boxes[4].checked){
+          show_content('1_1_1_5');
 
-  							}
-  							//node 6.7
-  						}
-
-  					}
-  					else{
-  						if(boxes[8].checked){
-  							show_content('1_1_1_5');
-
-  						}
-  						else{
-  							show_content('1_1_1_4');
-  						}
-  						// if b 4,5
-  					}
-  				}
-  				else{
-  					if(boxes[8].checked){
-  						show_content('1_1_1_3');
-
-  						}
-  						else{
-  							show_content('1_1_1_2');
-  						}
-  					// if budgets 2,3
-  				}
-
-  			}
-  			else{
-  				// display node 1
-  				show_content('1_1_1_1');
-  			}
-
-  		}
-  	}
+        }
+        else if(boxes[5].checked){
+          show_content('1_1_1_6');
+        }
+      }
+  }
 
 </script>		
 
