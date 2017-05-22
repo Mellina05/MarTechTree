@@ -328,7 +328,7 @@ font-size: 10pt;
 .decQuestion>h1{
 	font-family: 'OpenSans-Light';
 	letter-spacing: 3px;
-	font-size: 300%; 
+	font-size: 250%; 
 	padding: 10%;
 }
 
@@ -347,7 +347,7 @@ font-size: 10pt;
  	background-color: none;
  	border: 2px solid #C59E47;
  	font-family: 'BebasNeue Regular';
-  	font-size: 25px;
+  	font-size: 30px;
   	color: #313943;
   	padding: 1.5%;
   	margin:2%;
@@ -801,3 +801,250 @@ left: 0%;
 	src: url(../source/fonts/Roboto-Light.ttf) format("truetype");
 
 }
+
+
+/*  ------------------------------------  *Latest cars *   -----------------------------------   */
+.carimages{
+	 max-width: 100%;
+}
+.latestcars>h1{
+	font-family: "OpenSans-Light";
+	font-size: 41px;
+	letter-spacing: 10px;
+	padding-top: 66px;
+	padding-bottom: 70px;
+	color: #020243;
+}
+.sortby{
+	font-family: "OpenSans Regular";
+	font-size: 16px;
+	color: #262626;
+}
+.latestlist{
+	color: #6D6D6D;
+	font-family: "OpenSans Regular";
+	font-size: 14px;
+	color: #262626;
+ 
+}
+.latest-navleft{
+	width: 752px;
+	margin-left: auto!important;
+	margin-right: auto!important;
+	border: 0px;
+	float: none!important;
+
+}
+.latest-navleft>li:last-child{
+	padding-left: 216px;
+}
+.latest-navleft>li>a{
+	color: #6D6D6D;
+	font-family: "OpenSans Regular";
+	font-size: 14.8px;
+	border: 0px;
+	padding-top: 0px;
+ 
+}
+.latest-navleft > li > a:hover,
+.latest-navleft > li > a:focus {
+  text-decoration: none;
+  background-color: #fff;
+  outline: none;
+}
+.latest-navleft>li>button{
+	background: none;
+	background-color: none;
+	border: 0px;
+	font-size: 15pt;
+	color: #F8C72D;
+}
+.latest-navleft>li>button:hover{
+	color: #3F86D2;
+}
+
+.latest-navleft>li>a:hover{
+	background: none;
+	background-color: none;
+	border: 0px;
+	 
+}
+@media screen and (min-width: 1366px){
+.latest-navleft{
+	width: 810px;
+
+}	
+}
+@media screen and (max-width: 767px){
+.latestcars>h1{
+	font-size: 18px;
+	letter-spacing: 5px;
+	padding-top: 20px;
+	margin-top: 0px;
+	padding-bottom: 40px;
+}	
+.latest-navleft{
+	padding-bottom: 0px;
+	padding-bottom: 0px;
+	height: 186px;
+}
+.latest-navleft>li{
+	float: none;
+
+}
+.latestcars{
+	padding-bottom: 0px!important;
+}
+ 
+ 
+ 
+ .li-sortby{
+ 	padding-bottom: 20px;
+ }
+ .sortby{
+font-weight: bold;
+}
+
+.latestcars{
+	text-align: center;
+	padding-bottom: 20px;
+}
+#hideonmobile{
+	visibility: hidden;
+}
+.latest-navleft{
+	width: 260px;
+
+}
+}
+@media screen and (min-width: 768px) and (max-width: 1067px){
+.sortby{
+	font-family: "OpenSans Regular";
+	font-size: 14px;
+	color: #262626;
+}
+.latestlist{
+	font-size: 12px;
+ 
+}
+.latest-navleft>li>a{
+padding-left: 0px;
+	}
+.latest-navleft{
+	width: 675px;
+
+}
+}
+
+/*-----------------------------------Image Car Thumbnail --------------------------*/
+
+.txtcontent{
+	position: absolute;
+	top:0px;
+	left:0px;
+	background: rgba(12,12,12,.7);
+	width: 100%;
+	height: 100%;
+	 opacity: 0;
+	-webkit-transition: opacity 500ms;
+  	-moz-transition: opacity 500ms;
+  	-o-transition: opacity 500ms;
+  	transition: opacity 500ms;
+
+
+}
+ .stars{
+ 	font-size: 7px;
+	padding-top: 57px;
+	padding-bottom: 12px;
+	text-align: center;
+	border-bottom: 2px solid #F6F6FB;
+	margin-left:58px;
+	margin-right: 58px;
+	color: #F6F6FB;
+
+}
+.simpletxt{
+	text-align: center;
+	border-top: 1px solid #F6F6FB;
+	border-bottom: 1px solid #F6F6FB;
+	margin-top: 2px;
+	margin-left: 58px;
+	margin-right: 58px;
+	padding-top: 40px;
+}
+.simpletxt>h3{
+	font-family: "OpenSans Semibold";
+	font-size: 13.6px;
+	color:#E7E7E7;
+	margin: 0px;
+}
+.simpletxt>p{
+	font-family: "OpenSans Regular";
+	font-size: 11.2px;
+	color: #E7E7E7;
+	padding-top: 7px;
+}
+.simpletxt>h4{
+	font-family: "OpenSans Regular";
+	font-size:11.3px;
+	font-weight: bold;
+	text-align: center;
+	color: #FFF;
+	padding-bottom: 25px;
+
+}
+
+.simpletxt>button{
+	background: none;
+	border: 1px solid #fff;
+	font-family:"OpenSans Regular";
+	color: #fff;
+	margin-bottom: 14px;
+}
+.wishtxt{
+	padding-bottom: 42px;
+}
+.wishtxt .paragraph1{
+	font-family: "OpenSans Regular";
+	font-size:11.32px;
+	color: #fff;
+	float: left;
+
+
+}
+.wishtxt .paragraph2{
+	font-family: "OpenSans Regular";
+	font-size: 11.32px;
+	color: #fff;
+	float: right;
+}
+.stars2{
+ 	font-size: 7px;
+	padding-top: 10px;
+	margin-top: 2px;
+	text-align: center;
+	border-top: 2px solid #F6F6FB;
+	margin-left:58px;
+	margin-right: 58px;
+	color: #F6F6FB;
+
+}
+.txthover>img{
+	width:100%;
+
+}
+.txthover:hover .txtcontent{
+	opacity: 1;
+}
+@media screen and (min-width: 320px) and (max-width: 766px){
+ .stars{
+	padding-top: 20px;
+}
+}
+@media screen and (min-width: 1200px)and (max-width: 1280px){
+.stars{
+	padding-top: 37px;
+}
+}
+/*  -----------------     End Latest Cars Images    ------------------------ */
