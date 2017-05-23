@@ -533,7 +533,8 @@ font-size: 10pt;
 .panel-heading{
 	background: white; 
 	/*border: 2px solid #C59E47;*/
-	font-family: 'OpenSans-Light'; 
+	font-family: 'BebasNeue Regular'; 
+	letter-spacing: 3px;
 	padding: 3%; 
 	text-align: center;
 	/*border-radius: 0px;*/
@@ -564,12 +565,26 @@ font-size: 10pt;
 }
 */
 
+
+.node{
+	display: block;
+	width: 90%;
+	height: 250px;
+	/*border: solid 2px;*/
+	margin-top: 2%;
+	margin-bottom: 2%;
+	background-color: #f2f2f2;
+	border-radius: 10px;
+	/*padding: 3%;*/
+	box-shadow: 8px 8px 5px #cccccc;
+}
+
 .category{
 	display: block;
 	border-right: dashed 2px #C59E47;
 	padding: 2%;
 	text-align: center;
-	height: 100px;
+	height: 250px;
 	vertical-align: middle;
 }
 
@@ -578,7 +593,7 @@ font-size: 10pt;
 	border-radius: 10px;
 	padding:2%;
 	text-align: center;
-	height: 100px;
+	height: 250px;
 	vertical-align: middle;
 	/*display: none;*/
 }
@@ -587,7 +602,18 @@ font-size: 10pt;
 	display: none;
 }
 
+a{
+	color: black;
+}
 
+.outer{
+	width: 100%;
+}
+
+.inner{
+	width: 100%;
+	display: none;
+}
 
 
 
