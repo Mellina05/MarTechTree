@@ -286,6 +286,248 @@ font-size: 10pt;
 } */
 
 /*Introduction part*/
+/*____________________marketing funnel______________________*/
+.connect{
+	border: 2px solid;
+	width: 0;
+	height: 30px;
+	margin: auto;
+}
+
+.awareness {
+    width: 80%;
+    height: 100px;
+    background: #f2938c;
+    font-family: 'BebasNeue Regular';
+  	font-size: 30px;
+  	letter-spacing: 10px;
+  	text-align: center;
+    padding-top: 2%;
+    position: relative;
+    margin: auto;
+    box-shadow: 5px 5px 5px #cccccc;
+}
+
+.awareness:after {
+    content: '';
+    line-height: 0;
+    font-size: 0;
+    width: 0;
+    height: 0;
+    border-bottom: 50px solid transparent;
+    border-top: 50px solid #f2938c;
+    border-right: 50px solid transparent;
+    border-left: 50px solid #f2938c;
+    position: absolute;
+    top: 0;
+    right: -99px;
+}
+
+.awareness:before {
+    content: '';
+    line-height: 0;
+    font-size: 0;
+    width: 0;
+    height: 0;
+    border-bottom: 50px solid transparent;
+    border-top: 50px solid #f2938c;
+    border-right: 50px solid #f2938c;
+    border-left: 50px solid transparent;
+    position: absolute;
+    top: 0;
+    left: -99px;
+}
+
+
+.consideration {
+    width: 61%;
+    height: 100px;
+    background: #f0a075;
+    font-family: 'BebasNeue Regular';
+  	font-size: 30px;
+  	letter-spacing: 10px;
+  	text-align: center;
+    padding-top: 2%;
+    position: relative;
+    margin: auto;
+    box-shadow: 5px 5px 5px #cccccc;
+}
+
+.consideration:after {
+    content: '';
+    line-height: 0;
+    font-size: 0;
+    width: 0;
+    height: 0;
+    border-bottom: 50px solid transparent;
+    border-top: 50px solid #f0a075;
+    border-right: 50px solid transparent;
+    border-left: 50px solid #f0a075;
+    position: absolute;
+    top: 0;
+    right: -99px;
+}
+
+.consideration:before {
+    content: '';
+    line-height: 0;
+    font-size: 0;
+    width: 0;
+    height: 0;
+    border-bottom: 50px solid transparent;
+    border-top: 50px solid #f0a075;
+    border-right: 50px solid #f0a075;
+    border-left: 50px solid transparent;
+    position: absolute;
+    top: 0;
+    left: -99px;
+}
+
+.conversion {
+    width: 42%;
+    height: 100px;
+    background: #fce282;
+    font-family: 'BebasNeue Regular';
+  	font-size: 30px;
+  	letter-spacing: 10px;
+  	text-align: center;
+    padding-top: 2%;
+    position: relative;
+    margin: auto;
+    box-shadow: 5px 5px 5px #cccccc;
+}
+
+.conversion:after {
+    content: '';
+    line-height: 0;
+    font-size: 0;
+    width: 0;
+    height: 0;
+    border-bottom: 50px solid transparent;
+    border-top: 50px solid #fce282;
+    border-right: 50px solid transparent;
+    border-left: 50px solid #fce282;
+    position: absolute;
+    top: 0;
+    right: -99px;
+}
+
+.conversion:before {
+    content: '';
+    line-height: 0;
+    font-size: 0;
+    width: 0;
+    height: 0;
+    border-bottom: 50px solid transparent;
+    border-top: 50px solid #fce282;
+    border-right: 50px solid #fce282;
+    border-left: 50px solid transparent;
+    position: absolute;
+    top: 0;
+    left: -99px;
+}
+
+.loyalty {
+    width: 22%;
+    height: 100px;
+    background: #a5da8b;
+    font-family: 'BebasNeue Regular';
+  	font-size: 30px;
+  	letter-spacing: 10px;
+  	text-align: center;
+    padding-top: 2%;
+    position: relative;
+    margin: auto;
+    box-shadow: 5px 5px 5px #cccccc;
+}
+
+.loyalty:after {
+    content: '';
+    line-height: 0;
+    font-size: 0;
+    width: 0;
+    height: 0;
+    border-bottom: 50px solid transparent;
+    border-top: 50px solid #a5da8b;
+    border-right: 50px solid transparent;
+    border-left: 50px solid #a5da8b;
+    position: absolute;
+    top: 0;
+    right: -99px;
+}
+
+.loyalty:before {
+    content: '';
+    line-height: 0;
+    font-size: 0;
+    width: 0;
+    height: 0;
+    border-bottom: 50px solid transparent;
+    border-top: 50px solid #a5da8b;
+    border-right: 50px solid #a5da8b;
+    border-left: 50px solid transparent;
+    position: absolute;
+    top: 0;
+    left: -99px;
+}
+
+.advocacy {
+    width: 20%;
+    height: 100px;
+    background: #81dafd;
+    font-family: 'BebasNeue Regular';
+  	font-size: 30px;
+  	letter-spacing: 10px;
+  	text-align: center;
+    padding-top: 2%;
+    position: relative;
+    margin: auto;
+    margin-bottom: 3%;
+    box-shadow: 5px 5px 5px #cccccc;
+}
+
+/*.advocacy:after {
+    content: '';
+    line-height: 0;
+    font-size: 0;
+    width: 0;
+    height: 0;
+    border-bottom: 50px solid transparent;
+    border-top: 50px solid #81dafd;
+    border-right: 50px solid transparent;
+    border-left: 50px solid #81dafd;
+    position: absolute;
+    top: 0;
+    right: -99px;
+}
+
+.advocacy:before {
+    content: '';
+    line-height: 0;
+    font-size: 0;
+    width: 0;
+    height: 0;
+    border-bottom: 50px solid transparent;
+    border-top: 50px solid #81dafd;
+    border-right: 50px solid #81dafd;
+    border-left: 50px solid transparent;
+    position: absolute;
+    top: 0;
+    left: -99px;
+}
+*/
+/*____________________marketing funnel______________________*/
+
+.subtitle{
+	text-align: center;
+	padding: 0px;
+	margin-bottom: 2%;
+	letter-spacing: 2px;
+	font-family: 'OpenSans-Light';
+	/*color: #020243;*/
+	font-size: 25px;
+
+}
 
 .row{
 	padding: 0px;
@@ -648,8 +890,11 @@ a{
 	font-family: 'BebasNeue Regular';
 	font-size: 45px;
 	letter-spacing: 10px;
-	padding-top: 66px;
-	padding-bottom: 70px;
+	/*padding-top: 66px;
+	padding-bottom: 70px;*/
+	padding: 0;
+	margin-top: 1%;
+	margin-bottom: 1%;
 	color: #020243;
 }
 
