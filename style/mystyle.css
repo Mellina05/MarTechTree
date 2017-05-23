@@ -358,6 +358,17 @@ font-size: 10pt;
  	color: #fff;
  }
 
+ /*.cstm-data-check>label{
+ 	margin: 0;
+ 	padding-top: 10%;
+ 	padding-bottom: 10%;
+ 	border: 1px solid #d4d4d3;
+ 	width: 30%;
+ 	height: 100px;
+ 	text-align: center;
+ }
+*/
+
 
 /*node style*/
 .node-style{
@@ -396,7 +407,7 @@ font-size: 10pt;
 
 /*checkbox style*/
 #decButton>div{
-	text-align: left;
+	/*text-align: left;*/
 }
 
 
@@ -404,14 +415,26 @@ font-size: 10pt;
 	font-family: 'BebasNeue Regular';
 	letter-spacing: 2px;
   	font-size: 20px;
-  	padding: 1.5%;
-  	margin-left: 2%;
+
+  	margin: 0;
+ 	border: 2px solid #C59E47;
+ 	border-radius: 10px;
+ 	box-shadow: 5px 5px 5px #d4d4d3;
+ 	width: 33%;
+ 	height: 100px;
+ 	text-align: center;
+ 	padding-top: 3%;
+
+  	/*padding: 1.5%;
+  	margin-left: 2%;*/
   	/*border: 1px solid #C59E47;*/
 }
 
 .check{
 	width: 20px;
 	height: 20px;
+	/*border: 1px solid #C59E47;*/
+	/*margin-left: 2%;*/
 }
 
 /*Login page*/
