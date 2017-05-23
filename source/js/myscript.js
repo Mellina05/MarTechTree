@@ -3,7 +3,8 @@ $(function() {
       range: true,
       min: 0,
       max: 1000000,
-      values: [ 500000, 1000000 ],
+      step: 1000,
+      values: [ 0, 1000000 ],
       slide: function( event, ui ) {
         $( "#amount" ).val( "$" + ui.values[ 0 ] + " - $" + ui.values[ 1 ] );
       }

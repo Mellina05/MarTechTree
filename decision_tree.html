@@ -378,7 +378,7 @@
 		</div>
 
     <div id="decButton" class="1_1_1_0_button" style="display: none;">
-      <button onclick="show_content('1_1_1_0_0')"><span class="postnewcar">Learn more</span></button>
+      <button onclick="node_section(['crm'])"><span class="postnewcar">Learn more</span></button>
       <button onclick="return_content('1_1_1_0')"><span class="postnewcar">Return</span></button>
     </div>
 
@@ -506,70 +506,7 @@
 			
 		</div>
 
-<script type="text/javascript">
-	function show_content(id){
-  		document.getElementById(id).style.display='block';
-  		
-  		len = id.toString().length;
-  		parent_id = id.toString().substring(0,id.toString().length-2);
-  		console.log("Remove content of id(parent): " + parent_id);
-  		document.getElementById(parent_id).style.display='none';
-  		button_id = parent_id + "_button";
-  		document.getElementsByClassName(button_id)[0].style.display='none';
-  		this_button_id = id + "_button";
-  		document.getElementsByClassName(this_button_id)[0].style.display='block';
-      grid_id = id + "_grid";
-      console.log("Final Node: ", grid_id);
-      document.getElementById(grid_id).style.display='block';
-      // this_button_id = id + "_button";
-      // document.getElementsByClassName(this_button_id)[0].style.display='block'
-  	}
-
-    function return_content(id){
-      document.getElementById(id).style.display='none';
-      len = id.toString().length;
-      parent_id = id.toString().substring(0,id.toString().length-2);
-      console.log("Display the content of id(parent): " + parent_id);
-      document.getElementById(parent_id).style.display='block';
-      button_id = parent_id + "_button";
-      document.getElementsByClassName(button_id)[0].style.display='block';
-      this_button_id = id + "_button";
-      document.getElementsByClassName(this_button_id)[0].style.display='none';
-      grid_id = id + "_grid";
-      document.getElementById(grid_id).style.display='none';
-    }
-
-  	function showCheck(name){
-  		boxes = document.getElementsByClassName(name);
-  		if(boxes[0].checked){ // ST
-  			if(boxes[1].checked){ //phone and add
-  				if(boxes[2].checked){ // email and OT
-            show_content('1_1_1_3');
-          }
-          else{
-            show_content('1_1_1_2');
-          }
-        }
-        else{
-          show_content('1_1_1_1');
-        }
-      }
-      else{
-        if(boxes[3].checked){
-          show_content('1_1_1_4');
-
-        }
-        else if(boxes[4].checked){
-          show_content('1_1_1_5');
-
-        }
-        else if(boxes[5].checked){
-          show_content('1_1_1_6');
-        }
-      }
-  }
-
-</script>		
+<script type="text/javascript" src="source/js/script.js"></script>		
 
 <script type="text/javascript" src="source/bootstrap-3.3.6-dist/js/jquery.js"></script>
 <script type="text/javascript" src="source/js/isotope.js"></script>
