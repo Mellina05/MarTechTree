@@ -295,7 +295,7 @@ font-size: 10pt;
 }
 
 .awareness {
-    width: 80%;
+    width: 65%;
     height: 100px;
     background: #f2938c;
     font-family: 'BebasNeue Regular';
@@ -316,11 +316,11 @@ font-size: 10pt;
     height: 0;
     border-bottom: 50px solid transparent;
     border-top: 50px solid #f2938c;
-    border-right: 50px solid transparent;
-    border-left: 50px solid #f2938c;
+    border-right: 25px solid transparent;
+    border-left: 25px solid #f2938c;
     position: absolute;
     top: 0;
-    right: -99px;
+    right: -50px;
 }
 
 .awareness:before {
@@ -331,16 +331,16 @@ font-size: 10pt;
     height: 0;
     border-bottom: 50px solid transparent;
     border-top: 50px solid #f2938c;
-    border-right: 50px solid #f2938c;
-    border-left: 50px solid transparent;
+    border-right: 25px solid #f2938c;
+    border-left: 25px solid transparent;
     position: absolute;
     top: 0;
-    left: -99px;
+    left: -50px;
 }
 
 
 .consideration {
-    width: 61%;
+    width: 55%;
     height: 100px;
     background: #f0a075;
     font-family: 'BebasNeue Regular';
@@ -361,11 +361,11 @@ font-size: 10pt;
     height: 0;
     border-bottom: 50px solid transparent;
     border-top: 50px solid #f0a075;
-    border-right: 50px solid transparent;
-    border-left: 50px solid #f0a075;
+    border-right: 25px solid transparent;
+    border-left: 25px solid #f0a075;
     position: absolute;
     top: 0;
-    right: -99px;
+    right: -50px;
 }
 
 .consideration:before {
@@ -376,15 +376,15 @@ font-size: 10pt;
     height: 0;
     border-bottom: 50px solid transparent;
     border-top: 50px solid #f0a075;
-    border-right: 50px solid #f0a075;
-    border-left: 50px solid transparent;
+    border-right: 25px solid #f0a075;
+    border-left: 25px solid transparent;
     position: absolute;
     top: 0;
-    left: -99px;
+    left: -50px;
 }
 
 .conversion {
-    width: 42%;
+    width: 45%;
     height: 100px;
     background: #fce282;
     font-family: 'BebasNeue Regular';
@@ -405,11 +405,11 @@ font-size: 10pt;
     height: 0;
     border-bottom: 50px solid transparent;
     border-top: 50px solid #fce282;
-    border-right: 50px solid transparent;
-    border-left: 50px solid #fce282;
+    border-right: 25px solid transparent;
+    border-left: 25px solid #fce282;
     position: absolute;
     top: 0;
-    right: -99px;
+    right: -50px;
 }
 
 .conversion:before {
@@ -420,15 +420,15 @@ font-size: 10pt;
     height: 0;
     border-bottom: 50px solid transparent;
     border-top: 50px solid #fce282;
-    border-right: 50px solid #fce282;
-    border-left: 50px solid transparent;
+    border-right: 25px solid #fce282;
+    border-left: 25px solid transparent;
     position: absolute;
     top: 0;
-    left: -99px;
+    left: -50px;
 }
 
 .loyalty {
-    width: 22%;
+    width: 35%;
     height: 100px;
     background: #a5da8b;
     font-family: 'BebasNeue Regular';
@@ -449,11 +449,11 @@ font-size: 10pt;
     height: 0;
     border-bottom: 50px solid transparent;
     border-top: 50px solid #a5da8b;
-    border-right: 50px solid transparent;
-    border-left: 50px solid #a5da8b;
+    border-right: 25px solid transparent;
+    border-left: 25px solid #a5da8b;
     position: absolute;
     top: 0;
-    right: -99px;
+    right: -50px;
 }
 
 .loyalty:before {
@@ -464,17 +464,61 @@ font-size: 10pt;
     height: 0;
     border-bottom: 50px solid transparent;
     border-top: 50px solid #a5da8b;
-    border-right: 50px solid #a5da8b;
-    border-left: 50px solid transparent;
+    border-right: 25px solid #a5da8b;
+    border-left: 25px solid transparent;
     position: absolute;
     top: 0;
-    left: -99px;
+    left: -50px;
 }
 
 .advocacy {
-    width: 20%;
+    width: 25%;
     height: 100px;
     background: #81dafd;
+    font-family: 'BebasNeue Regular';
+  	font-size: 30px;
+  	letter-spacing: 10px;
+  	text-align: center;
+    padding-top: 2%;
+    position: relative;
+    margin: auto;
+    box-shadow: 5px 5px 5px #cccccc;
+}
+
+.advocacy:after {
+    content: '';
+    line-height: 0;
+    font-size: 0;
+    width: 0;
+    height: 0;
+    border-bottom: 50px solid transparent;
+    border-top: 50px solid #81dafd;
+    border-right: 25px solid transparent;
+    border-left: 25px solid #81dafd;
+    position: absolute;
+    top: 0;
+    right: -50px;
+}
+
+.advocacy:before {
+    content: '';
+    line-height: 0;
+    font-size: 0;
+    width: 0;
+    height: 0;
+    border-bottom: 50px solid transparent;
+    border-top: 50px solid #81dafd;
+    border-right: 25px solid #81dafd;
+    border-left: 25px solid transparent;
+    position: absolute;
+    top: 0;
+    left: -50px;
+}
+
+.result {
+    width: 23%;
+    height: 100px;
+    background: #b99ee0;
     font-family: 'BebasNeue Regular';
   	font-size: 30px;
   	letter-spacing: 10px;
@@ -486,36 +530,7 @@ font-size: 10pt;
     box-shadow: 5px 5px 5px #cccccc;
 }
 
-/*.advocacy:after {
-    content: '';
-    line-height: 0;
-    font-size: 0;
-    width: 0;
-    height: 0;
-    border-bottom: 50px solid transparent;
-    border-top: 50px solid #81dafd;
-    border-right: 50px solid transparent;
-    border-left: 50px solid #81dafd;
-    position: absolute;
-    top: 0;
-    right: -99px;
-}
 
-.advocacy:before {
-    content: '';
-    line-height: 0;
-    font-size: 0;
-    width: 0;
-    height: 0;
-    border-bottom: 50px solid transparent;
-    border-top: 50px solid #81dafd;
-    border-right: 50px solid #81dafd;
-    border-left: 50px solid transparent;
-    position: absolute;
-    top: 0;
-    left: -99px;
-}
-*/
 /*____________________marketing funnel______________________*/
 
 .subtitle{
@@ -790,6 +805,44 @@ font-size: 10pt;
  	background-color: #C59E47;
  	color: #fff;
  }
+
+
+/*Funnel page*/
+
+.funnel>label{
+  font-size: 25px;
+  font-family: 'OpenSans-Light'; 
+  border: 1px solid #C59E47;
+  box-shadow: 5px 5px 5px #d4d4d3; 
+  border-radius:10px; 
+  padding: 1%; 
+  margin-bottom: 1%;
+}
+
+.funnel>button{
+  background: white;
+  font-size: 25px;
+  font-family: 'OpenSans-Light'; 
+  border: 1px solid #C59E47;
+  box-shadow: 5px 5px 5px #d4d4d3; 
+  border-radius:10px; 
+  padding: 5%; 
+  margin-bottom: 1%;
+  width: 60%;
+}
+
+.funnel>div>button{
+  background: none;
+  background-color: none;
+  border: 2px solid #C59E47;
+  font-family: 'BebasNeue Regular';
+    font-size: 20px;
+    color: #313943;
+    padding: 1.5%;
+    margin:2%;
+}
+
+
 
 
 
