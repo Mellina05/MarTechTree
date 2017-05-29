@@ -48,9 +48,10 @@
 
 <div class="container">
 	<!-- title -->
-	<div class="row" style="margin-bottom: 3%">
-		<h1> Now we have come to the last chapter of this path, and here are the suggestions for you</h1>
-	</div> 
+	<div class="decQuestion" id="question">
+    <!-- Understanding customer question -->
+    <h1 class="text-center" id="1" style="display: block;">Step 1: What current customer data do you have?</h1>          
+  </div>
 	<!-- sections -->
 	<div class="section" id="crm">
   			<div class="panel-group">
@@ -58,7 +59,7 @@
     				<a data-toggle="collapse" href="#collapse1">
       				<div class="panel-heading">
         				<h4 class="panel-title" style="font-size: 30px">
-          					CRM, Customer database management tool
+          					Customer database management
         				</h4>
       				</div>
       				</a>
@@ -68,7 +69,7 @@
 								<div class="row">
 									<div class="outer">
   									<div class="col-6 col-sm-3 product">
-  										<h1>Product A</h1>
+  										<h1>Excel</h1>
   										<div style="color: #C59E47;margin-top: 0;">
                 							<div class="glyphicon glyphicon-star"></div>
                 							<div class="glyphicon glyphicon-star"></div>
@@ -80,7 +81,7 @@
 										</div>
   									</div>
   									<div class="col-6 col-sm-3 product">
-  										<h1>Product B</h1>
+  										<h1>Google Sheets</h1>
   										<div style="color: #C59E47;margin-top: 0;">
                 							<div class="glyphicon glyphicon-star"></div>
                 							<div class="glyphicon glyphicon-star"></div>
@@ -105,46 +106,6 @@
 										</div>
   									</div>
   									</div>
-  									<div class="inner">
-  										<div class="col-6 col-sm-3 product">
-  										<h1>Product D</h1>
-  										<div style="color: #C59E47;margin-top: 0;">
-                							<div class="glyphicon glyphicon-star"></div>
-                							<div class="glyphicon glyphicon-star"></div>
-                							<div class="glyphicon glyphicon-star"></div>
-              							</div>
-  										<p>Description</p>
-  										<div id="small-button">
-											<button onclick=""><span>Read More</span></button>
-										</div>
-  									</div>
-  									<div class="col-6 col-sm-3 product">
-  										<h1>Product E</h1>
-  										<div style="color: #C59E47;margin-top: 0;">
-                							<div class="glyphicon glyphicon-star"></div>
-                							<div class="glyphicon glyphicon-star"></div>
-                							<div class="glyphicon glyphicon-star"></div>
-              							</div>
-  										<p>Description</p>
-  										<div id="small-button">
-											<button onclick=""><span>Read More</span></button>
-										</div>
-  									</div>
-  									
-  									<div class="col-6 col-sm-3 product">
-  										
-  										<h1>Product F</h1>
-  										<div style="color: #C59E47;margin-top: 0;">
-                							<div class="glyphicon glyphicon-star"></div>
-                							<div class="glyphicon glyphicon-star"></div>
-              							</div>
-  										<p>Description</p>
-  										<div id="small-button">
-											<button onclick="" ><span>Read More</span></button>
-										</div>
-  									</div>
-  										
-  									</div>
   									
   									<div class="col-6 col-sm-3 product">
   										
@@ -164,6 +125,80 @@
       				</div>
     			</div>
 			</div>
+
+      <div class="panel-group">
+          <div class="panel panel-default">
+            <a data-toggle="collapse" href="#collapse2">
+              <div class="panel-heading">
+                <h4 class="panel-title" style="font-size: 30px">
+                    Do a survey
+                </h4>
+              </div>
+              </a>
+              <div id="collapse2" class="panel-collapse collapse">
+                <div class="panel-body">
+                  <div class="node" style="margin: auto;">
+                <div class="row">
+                  <div class="outer">
+                    <div class="col-6 col-sm-3 product">
+                      <h1>Product A</h1>
+                      <div style="color: #C59E47;margin-top: 0;">
+                              <div class="glyphicon glyphicon-star"></div>
+                              <div class="glyphicon glyphicon-star"></div>
+                              <div class="glyphicon glyphicon-star"></div>
+                            </div>
+                      <p>Description</p>
+                      <div id="small-button">
+                      <button onclick=""><span>Read More</span></button>
+                    </div>
+                    </div>
+                    <div class="col-6 col-sm-3 product">
+                      <h1>Product B</h1>
+                      <div style="color: #C59E47;margin-top: 0;">
+                              <div class="glyphicon glyphicon-star"></div>
+                              <div class="glyphicon glyphicon-star"></div>
+                              <div class="glyphicon glyphicon-star"></div>
+                            </div>
+                      <p>Description</p>
+                      <div id="small-button">
+                      <button onclick=""><span>Read More</span></button>
+                    </div>
+                    </div>
+                    
+                    <div class="col-6 col-sm-3 product">
+                      
+                      <h1>Product C</h1>
+                      <div style="color: #C59E47;margin-top: 0;">
+                              <div class="glyphicon glyphicon-star"></div>
+                              <div class="glyphicon glyphicon-star"></div>
+                            </div>
+                      <p>Description</p>
+                      <div id="small-button">
+                      <button onclick="" ><span>Read More</span></button>
+                    </div>
+                    </div>
+                    </div>
+                    
+                    <div class="col-6 col-sm-3 product">
+                      
+                      <!-- <h1>Product D</h1>
+                      <div style="color: #C59E47;margin-top: 0;">
+                              <div class="glyphicon glyphicon-star"></div>
+                            </div>
+                      <p>Description</p> -->
+                      <div id="small-button">
+                      <button id="more" style="margin-top: 45%;"><span>More MarTech</span></button>
+                    </div>
+                    
+                    </div>
+                </div>
+              </div>
+                </div>
+              </div>
+          </div>
+      </div>
+
+
 	</div>
 	<div class="section" id="data_analysis">
 		<div class="panel-group">
@@ -526,6 +561,28 @@
 		</div>
 	</div>
 </div>
+
+
+<div>
+    <div id="decButton" class="1_button" style="display: block;">
+    <div class="cstm-data-check">
+      <label style="width: 100%; margin-bottom: 1%;"><input type="checkbox" class="check" id="check_0">I don't have any data</label>
+    </div>
+    <div class="cstm-data-check">
+      <label style="margin-bottom: 1%"><input type="checkbox" class="check" id="check_1">Store Transaction</label>
+      <label style="margin-bottom: 1%"><input type="checkbox" class="check" id="check_2">Phone Number and/or Address</label>
+      <label style="margin-bottom: 1%"><input type="checkbox" class="check" id="check_3">Email Address and Online Transaction</label> 
+      <label><input type="checkbox" class="check" id="check_4">Social Media </label>
+      <label><input type="checkbox" class="check" id="check_5">Customer Web Activity </label>
+      <label><input type="checkbox" class="check" id="check_6">Customer App Activity </label>
+    </div>
+    <!-- <label><input type="checkbox" class="check" id="check_6">I don't have any data</label> -->
+    <!-- <button onclick="show_content('1_1_1_0')"><span class="postnewcar">I don't have any data</span></button> -->
+    <button onclick="showCheck('check')"><span class="postnewcar">Continue</span></button>
+    <button onclick="window.location.href='decision_tree.html'"><span class="postnewcar">Return</span></button>
+      <!-- <button onclick="window.location.href='decision_tree.html'"><span class="postnewcar">Start over</span></button> -->
+  </div>
+</div>
 			
 
 
@@ -552,27 +609,27 @@
 </div>
 
 <script type="text/javascript">
-	function getSection() {
-		var section_list = localStorage.getItem('section_list');
-		if(!section_list)
-			console.log("Nothing to show");
-		else{
-			console.log(section_list);
-			var sections = section_list.split(",");
-			console.log(sections);
-			for(var i = 0; i < sections.length; i++){
+// 	function getSection() {
+// 		var section_list = localStorage.getItem('section_list');
+// 		if(!section_list)
+// 			console.log("Nothing to show");
+// 		else{
+// 			console.log(section_list);
+// 			var sections = section_list.split(",");
+// 			console.log(sections);
+// 			for(var i = 0; i < sections.length; i++){
 
-				var id = sections[i];
-				//console.log(id);
-				document.getElementById(id).style.display='block';
+// 				var id = sections[i];
+// 				//console.log(id);
+// 				document.getElementById(id).style.display='block';
 
-			}
-		}
-		localStorage.removeItem('section_list');
-	}
+// 			}
+// 		}
+// 		localStorage.removeItem('section_list');
+// 	}
 
 
-window.onload = getSection;
+// window.onload = getSection;
 </script>
 
 <!-- <script type="text/javascript">

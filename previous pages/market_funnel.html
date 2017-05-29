@@ -42,22 +42,67 @@
 	</div>
 </div>
 
-<!-- Question panel -->
-<div class="container" style="margin-bottom: 5%;">
-    	<div class="decQuestion" id="question">
-    		<h1 class="text-center" id="1" style="display: block;">What is your biggest marketing challenge?</h1>
-    	</div>
+<!-- <div>
+    <div class="awareness">Awareness</div>
+    <div class="connect"></div>
+    <div class="consideration">Consideration</div>
+    <div class="connect"></div>
+    <div class="conversion">Conversion</div>
+    <div class="connect"></div>
+    <div class="loyalty">Loyalty</div>
+    <div class="connect"></div>
+    <div class="advocacy">Advocacy</div>
+    <div class="connect"></div>
+    <div class="result"> Result </div>
+</div> -->
 
-<!-- buttons -->
-		<div id="decButton" class="1_button">
-			<button onclick="window.location.href='acquisition.html'"><span>New Customer Acquisition</span></button>
-			<button onclick="window.location.href='understand.html'"><span>Current Customer Retention</span></button>
-		</div>
+<div class="container" style="margin-bottom: 5%;">
+      <div class="decQuestion" id="question">
+        <h1 class="text-center" id="1" style="display: block;">What would you like to focus on now for your business</h1>
+
+        <h1 class="text-center" id="1_1" style="display: none;">Do you have a pool of potential customers</h1>
+        <h1 class="text-center" id="1_2" style="display: none;">Loyalty Phase, still in progress</h1>
+
+        <h1 class="text-center" id="1_1_0" style="display: none;">What would you like to focus now for your business?</h1>
+
+        <h1 class="text-center" id="1_1_0_1" style="display: none;"> (Awareness phase-- Strategy: Get more strangers to know and interested in your products)
+</h1>
+        <h1 class="text-center" id="1_1_0_2" style="display: none;"> (Loyalty phase-- Strategy: Get your current customers to buy more from you)
+</h1>
+
+
+      </div>
+
+
+
+<div>
+    <div id="decButton" class="1_button funnel">
+      <button onclick="show_content('1_1')"><span>I’d like to acquire more new customers.</span></button>
+      <button onclick="show_content('1_2')"><span>I’d like to to sell more products to my current customers.</span></button>
+    </div>
+
+    <div class="1_1_button funnel" style="display: none;">
+      <label><input type="checkbox" class="check" id="check_1">Yes I have an email list of people engaged with us before(e.g. people engaged in our events before, subscribed to us, signed up on our website) </label>
+      <label><input type="checkbox" class="check" id="check_2">Yes I have a digital customer database (in excel, or based on some CRM system)
+</label>
+      <label><input type="checkbox" class="check" id="check_3">Yes I have a bunch of followers on our social media account, e.g. Facebook, Twitter, Instagram, Pinterest</label>
+      <div style="padding-left: 35%;">
+        <button onclick="show_content('1_1_0')"><span class="postnewcar">None</span></button>
+        <button onclick="showCheck('funnel_check')"><span class="postnewcar">Continue</span></button>
+        <button onclick="return_content('1_1_1')"><span class="postnewcar">Return</span></button>
+        
+      </div>
+      
+    </div>
+
+    <div id="decButton" class="1_1_0_button funnel" style="display: none;">
+      <button onclick="show_content('1_1_0_1')"><span>I’d like to acquire more new customers.</span></button>
+      <button onclick="show_content('1_1_0_2')"><span>I’d like to to sell more products to my current customers.</span></button>
+    </div>
+
 </div>
 
-
-
-
+</div>
 
 
 
