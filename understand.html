@@ -47,27 +47,37 @@
 <!-- ____________________Header End____________________________ -->
 
 <div class="container">
-	<!-- Title or Indicator bar -->
+	<!--______________________ Title or Indicator bar ________________________-->
   <div class="decQuestion">
         <h1 class="text-center" style="background: white; padding: 0">Customer Retention Phase(Maybe add a bar indicator later)</h1>
   </div>
 
-  <!-- Main question and education part -->
+  <!--____________________ Main question and education part ______________________-->
 	<div class="decQuestion" id="question">
     <!-- Understanding customer question -->
-    <h1 class="text-center" id="1" style="display: block;">Step 1: What current customer data do you have?</h1>  
-    <h1 class="text-center" id="1_0" style="display: none;">Since you don't have any data. Here is our suggestion:</h1>   
-    <h1 class="text-center" id="1_1" style="display: none;">You have store transaction data, and this is what you can do:</h1>   
-    <h1 class="text-center" id="1_2" style="display: none;">You have store transaction data and customer phone address and/or email, and this is what you can do:</h1>  
-    <h1 class="text-center" id="1_3" style="display: none;">With the data you have this is what you can do:</h1>   
-    <h1 class="text-center" id="1_4" style="display: none;">With the data you have this is what you can do:</h1>   
-    <h1 class="text-center" id="1_5" style="display: none;">With the data you have this is what you can do:</h1>
+    <h1 class="text-center" id="1" style="display: block;">Step 1: What current customer data do you have?</h1>
+    <!-- No data -->
+    <h1 class="text-center" id="1_0" style="display: none;">Would you like to start building your customer database?</h1>  
+    <h1 class="text-center" id="1_0_1" style="display: none;">Since you don't have any data. Here is our suggestion:</h1>   
+
+    
+    <h1 class="text-center" id="data" style="display: none;">
+      This is what you have: 
+      <div id="d1" style="display: none;">Store Transaction</div>
+      <div id="d2" style="display: none;">Phone number and address</div> 
+      <div id="d3" style="display: none;">Email address and Online Transaction</div>
+      <div id="d4" style="display: none;">Social Media</div>
+      <div id="d5" style="display: none;">Web Activity</div>
+      <div id="d6" style="display: none;">App Activity</div>
+      And here is our recommendation:
+    </h1>
   </div>
 
 
 	<!-- database sections -->
+<div id="data_recommendation">
   <!-- no data -->
-	<div class="section" id="1_0_recommendation" style="display: none;">
+	<div class="section" id="1_0_1_recommendation" style="display: none;">
   			<div class="panel-group">
     			<div class="panel panel-default">
     				<a data-toggle="collapse" href="#collapse1">
@@ -581,12 +591,10 @@
 		</div>
 	</div>
 
-
+</div>
   <div>
+  <!--___________________ Multi Choices ______________________ -->
     <div id="decButton" class="1_button" style="display: block;">
-    <!-- <div class="cstm-data-check">
-      <label style="width: 100%; margin-bottom: 1%;"><input type="checkbox" class="check" id="check_0">I don't have any data</label>
-    </div> -->
     <div class="cstm-data-check">
       <label style="width: 100%; margin-bottom: 1%;"><input type="checkbox" class="check" id="check_0">I don't have any data</label>
       <label style="margin-bottom: 1%"><input type="checkbox" class="check" id="check_1">Store Transaction</label>
@@ -596,25 +604,24 @@
       <label><input type="checkbox" class="check" id="check_5">Customer Web Activity </label>
       <label><input type="checkbox" class="check" id="check_6">Customer App Activity </label>
     </div>
-    <!-- <label><input type="checkbox" class="check" id="check_6">I don't have any data</label> -->
-    <!-- <button onclick="show_content('1_1_1_0')"><span class="postnewcar">I don't have any data</span></button> -->
     <button onclick="showCheck('check')"><span class="postnewcar">Continue</span></button>
     <button onclick="window.location.href='decision_tree.html'"><span class="postnewcar">Return</span></button>
-      <!-- <button onclick="window.location.href='decision_tree.html'"><span class="postnewcar">Start over</span></button> -->
   </div>
 
+  <!--_________ Page Before no Data __________ -->
   <div id="decButton" class="1_0_button" style="display: none;">
-    <button onclick="show_content('1_0_1')"><span class="postnewcar">Continue</span></button>
-    <button onclick="return_content('1_0')"><span class="postnewcar">Return</span></button>
+    <button onclick="show_content('1_0_1')"><span class="postnewcar">Yes, learn more</span></button>
+    <button onclick="return_content('1_0')"><span class="postnewcar">No, Return</span></button>
   </div>
-
-  <div id="decButton" class="1_1_button" style="display: none;">
+<!--____________Rcmmdtn for no data __________________-->
+  <div id="decButton" class="1_0_1_button" style="display: none;">
     <button onclick="window.location.href='retention.html'"><span class="postnewcar">Continue</span></button>
-    <button onclick="return_content('1_1')"><span class="postnewcar">Return</span></button>
+    <button onclick="return_content('1_0_1')"><span class="postnewcar">Return</span></button>
   </div>
 
-  <div id="decButton" class="1_2_button" style="display: none;">
-    <button onclick=""><span class="postnewcar">Continue</span></button>
+<!--_________________ Rcmmdtn for all data button _______________________-->
+  <div id="decButton" class="data_button" style="display: none;">
+    <button onclick="window.location.href='retention.html'"><span class="postnewcar">Continue</span></button>
     <button onclick="return_content('1_1')"><span class="postnewcar">Return</span></button>
   </div>
 

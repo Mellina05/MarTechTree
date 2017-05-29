@@ -842,7 +842,25 @@ font-size: 10pt;
     margin:2%;
 }
 
+/*retention*/
 
+.cr_step{
+  display: inline-block;
+  height:200px;
+  width: 30%;
+  background-image: url(../img/border.png);
+  background-repeat:no-repeat;
+  background-size: 100% 100%; 
+  background-position: center;
+}
+
+.cr_step>div{
+  text-align: left;
+  font-size: 20px;
+  font-family: 'OpenSans-Light';
+  margin-top: 24%;
+  padding-left: 5%;
+}
 
 
 
