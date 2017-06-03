@@ -32,8 +32,8 @@
 						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Marketers<span class="caret"></span></a>
 						<ul class="dropdown-menu dropdowncostume" style="background: #f7d26e">
 							<li><a href="m_login.html">Login/Sign up</a></li>
-							<li><a href="decision_tree.html">Your Tree</a></li>
-							<li><a href="preference_page.html">Update your preference</a></li>
+              <li><a href="decision_tree.html">Your Tree</a></li>
+              <li><a href="preference_page.html">Update your preference</a></li>
 						</ul>
 				</li>
 				<li><a href="contact.html">CONTACT US</a></li>
@@ -42,44 +42,45 @@
 	</div>
 </div>
 
-<!-- Top content -->
-<div class="login-title">
-	<h1 class="text-center">&bullet; <b>LOGIN FOR MARKETER</b> &bullet;</h1>
+<!-- Question panel -->
+<div class="container" style="margin-bottom: 5%;">
+	<!--______________ Assistent part _____________-->
+	<div class="assistent">
+		<div class="navbar-brand logo"><img src="img/advicer icon.png" width="220" height="120" ></div>
+    	<div class="decQuestion" id="first">
+    		<h1>Hi Andress! Welcome to MarTech Tree.</h1>
+    	</div>
+    	<br>
+    	<!-- <div class="navbar-brand logo"><img src="img/advicer icon.png" width="220" height="120" ></div> -->
+    	<div class="decQuestion" id="second">
+    		<h1>My name is Minerva. And I am your personal advisor</h1>
+    	</div>
+    	<br>
+    	<div class="decQuestion" id="third">
+    		<h1>I am here to guide your through your decision journey to build your Marketing Technology Tree.</h1>
+    	</div>
+    	<br>
+    	<!-- <div class="navbar-brand logo"><img src="img/advicer icon.png" width="220" height="120"></div> -->
+    	<div class="decQuestion" id= "forth">
+    		<h1>Let's start =)</h1>
+    	</div>
+    	<br>
+    </div>
+
+	<!--______________ Answer part _____________-->
+	<div id="decButton">
+		<button onclick="window.location.href='preference_page.html'"><span>Personal Information</span></button>
+		<button onclick="window.location.href='decision_tree.html'"><span>Start to build my tree</span></button>
+	</div>
 </div>
 
-<div class="login-content">
-	<div class="container">
-        <div class="row">
-            <div class="col-sm-6 col-sm-offset-3 form-box">
-                <h3><b>Enter your username and password to log in:</b></h3>
-                            
-			    <form role="form" action="" method="post" class="login-form">
-			        <div class="form-group">
-			          	<label class="sr-only" for="form-username">Username</label>
-			            <input type="text" name="form-username" placeholder="Username..." class="form-username form-control" id="form-username">
-			        </div>
-			        <div class="form-group">
-			            <label class="sr-only" for="form-password">Password</label>
-			            <input type="password" name="form-password" placeholder="Password..." class="form-password form-control" id="form-password">
-			        </div>
-			        <button onclick="window.location.href='welcome.html'" type="submit" class="btn">Sign in!</button>
-			    </form>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-sm-6 col-sm-offset-3 social-login">
-                <h3><b>...or login with:</b></h3>
-                <div class="social-login-buttons">
-                    <a class="btn btn-link-2" href="linked_page.html">
-                        <i class="fa fa-linkedin-square"></i>LinkedIn
-                    </a>
-                </div>
-            </div>
-        </div>
-    </div>	
-</div>
 
-<!-- ___________________Bottom Menu ____________________-->
+
+
+
+
+
+<!-- ___________________Bottom Menu ____________________ -->
 		<div class="bottomlogo">
 		<a href="index.html"><span class="dotlogo">&bullet;</span><img src="img/MarTTree.png" width="400" height="200" alt="logo"><span class="dotlogo">&bullet;</span></a>
 		</div>
@@ -101,10 +102,23 @@
 			
 		</div>
 
+<script type="text/javascript" src="source/js/script.js"></script>		
+
 <script type="text/javascript" src="source/bootstrap-3.3.6-dist/js/jquery.js"></script>
 <script type="text/javascript" src="source/js/isotope.js"></script>
 <script type="text/javascript" src="source/js/myscript.js"></script> 
 <script type="text/javascript" src="source/bootstrap-3.3.6-dist/js/jquery.1.11.js"></script>
 <script type="text/javascript" src="source/bootstrap-3.3.6-dist/js/bootstrap.js"></script>
+
+<script type="text/javascript">
+	$(document).ready(function() {
+		//console.log("AAAA");
+		$("#first").hide(50).delay(500).fadeIn(2200);
+		$("#second").hide(50).delay(2000).fadeIn(2200);
+		$("#third").hide(50).delay(3500).fadeIn(2200);
+		$("#forth").hide(50).delay(5000).fadeIn(2200);
+});
+</script>
+
 </body>
 </html>

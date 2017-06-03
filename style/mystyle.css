@@ -1,3 +1,30 @@
+@font-face{
+  font-family: 'Lato Regular';
+  src: url(../source/fonts/Lato-Regular.ttf) format("truetype");
+}
+@font-face{
+  font-family: 'Lato Black';
+  src: url(../source/fonts/Lato-Black.ttf) format("truetype");
+}
+@font-face{
+  font-family: 'Lato Bold';
+  src: url(../source/fonts/Lato-Bold.ttf) format("truetype");
+}
+@font-face{
+  font-family: 'Lato Italic';
+  src: url(../source/fonts/Lato-Italic.ttf) format("truetype");
+}
+
+@font-face{
+  font-family: 'Lato Bold Italic';
+  src: url(../source/fonts/Lato-BoldItalic.ttf) format("truetype");
+}
+
+@font-face{
+  font-family: 'Lato Light';
+  src: url(../source/fonts/Lato-Light.ttf) format("truetype");
+}
+
 
 .logo{
 	position: absolute;
@@ -548,7 +575,7 @@ font-size: 10pt;
 	padding: 0px;
 	margin: 0px;
 	letter-spacing: 2px;
-	font-family: 'OpenSans-Light';
+	font-family: 'Lato Light';
 	color: #020243;
 	font-size: 20px;
 }
@@ -571,47 +598,66 @@ font-size: 10pt;
 }
 
 /*Decision tree question part*/
+.assistent{
+  display: block;
+  height: 400px;
+  overflow-y: scroll;
+  border: 1px solid #d6d6d6;
+  border-radius: 10px;
+}
+
 .decQuestion{
-	/*width: 90%;
-	height: 80%;*/
- /*   border: 1px solid; */
-    background-image: url(../img/rec_border.png);
+    display: inline-block;
+    /*background-image: url(../img/bubble.png);
     background-repeat:no-repeat;
     background-size: 100% 100%; 
-    background-position: center;
-    margin: 5%;
+    background-position: center;*/
+    background-color: #f58c24;
+    border-radius: 10px;
+    margin-left: 20%;
+    margin-top: 1%
+    /*margin-right: 20%;*/
+    /*padding-left: 1%;*/
 }
 
 .decQuestion>h1{
-	font-family: 'OpenSans-Light';
+	font-family: 'Lato Bold Italic';
 	letter-spacing: 3px;
-	font-size: 250%; 
-	padding: 10%;
+	font-size: 150%; 
+	padding-left: 2%;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  color: white;
 }
 
 /*Decision tree button part*/
 
 
 #decButton{
-	/*border: 2px solid;*/
-	/*padding-left: 10%; */
 	text-align: center;
-	/*height: 250px;*/
+  /*border-top: 3px solid #d6d6d6;*/
+  /*background-color: #f2f2f2; 
+  border-radius: 10px;
+  display: block;
+  box-shadow: 5px 5px 5px #d4d4d3;*/
 }
 
 #decButton>button{
  	background: none;
  	background-color: none;
- 	border: 2px solid #C59E47;
- 	font-family: 'BebasNeue Regular';
-  	font-size: 30px;
-  	color: #313943;
-  	padding: 1.5%;
-  	margin:2%;
- }
+ 	border: 2px solid #f3bf30;
+  border-radius: 10px;
+ 	font-family: 'Lato Bold';
+  font-size: 150%;
+  color: #313943;
+  /*padding: 1.5% 1% 1.5% 1%;*/
+  padding: 1.5%;
+  margin:2%;
+  /*width: 40%;*/
+  }
 
  #decButton>button:hover{
- 	background-color: #C59E47;
+ 	background-color: #f3bf30;
  	color: #fff;
  }
 
@@ -716,8 +762,8 @@ font-size: 10pt;
 /*information page*/
 
 .information>h1{
-	font-family: 'BebasNeue Regular';
-	letter-spacing: 10px;
+	font-family: 'Lato Black';
+	letter-spacing: 5px;
 	font-size: 40px; 
 	padding-top: 2%; 
 	/*padding-bottom: 2%;*/
@@ -726,21 +772,21 @@ font-size: 10pt;
 .priceslider{
 	height: 90%;
 	font-size: 20px;
-	font-family: 'OpenSans-Light';
+	font-family: 'Lato Light';
 }
 
 .question{
 	padding-left: 2%; 
 	margin-bottom: 2%;
 	margin-top: 2%;
-	background-image: url(../img/rec_border.png);
+	/*background-image: url(../img/rec_border.png);
 	background-repeat:no-repeat;
 	background-size: 80% 100%; 
-	background-position: center;
+	background-position: center;*/
 }
 
 .question>h1{
-	font-family: 'OpenSans-Light';
+	font-family: 'Lato Regular';
 	letter-spacing: 3px;
 	font-size: 25px; 
 	padding: 5%;
@@ -748,7 +794,7 @@ font-size: 10pt;
 }
 
 .social-media{
-  font-family: 'OpenSans-Light';
+  font-family: 'Lato Light';
   letter-spacing: 3px;
   font-size: 25px; 
   text-align: left;
@@ -777,11 +823,16 @@ td{
 
 .head{
 	display: block;
-	border-right: dashed 2px #C59E47;
+	/*border-right: dashed 2px #C59E47;*/
+  font-family: 'Lato Regular';
 	padding: 2%;
 	text-align: center;
 	height: 100px;
 	vertical-align: middle;
+  background-color: #f3bf30;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  color: white;
 }
 
 .body{
@@ -804,8 +855,8 @@ td{
 #small-button>button{
  	background: none;
  	background-color: none;
- 	border: 2px solid #C59E47;
- 	font-family: 'BebasNeue Regular';
+ 	border: 2px solid #f3bf30;
+ 	font-family: 'Lato Regular';
   	font-size: 20px;
   	color: #313943;
   	padding: 1.5%;
@@ -813,7 +864,7 @@ td{
  }
 
  #small-button>button:hover{
- 	background-color: #C59E47;
+ 	background-color: #f3bf30;
  	color: #fff;
  }
 
@@ -822,8 +873,8 @@ td{
 
 .funnel>label{
   font-size: 25px;
-  font-family: 'OpenSans-Light'; 
-  border: 1px solid #C59E47;
+  font-family: 'Lato Light'; 
+  border: 1px solid #f3bf30;
   box-shadow: 5px 5px 5px #d4d4d3; 
   border-radius:10px; 
   padding: 1%; 
@@ -868,7 +919,7 @@ td{
 .cr_step>div{
   text-align: left;
   font-size: 22px;
-  font-family: 'OpenSans-Light';
+  font-family: ' Lato Light';
   margin-top: 24%;
   padding-left: 5%;
 }
