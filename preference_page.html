@@ -125,9 +125,8 @@
 				<div class="row">
   					<div class="col-6 col-sm-3 head">Data Analytics</div>
   					<div class="col-6 col-sm-3 body">Lattice predictABILITY</div>
-  					<!-- <div class="col-6 col-sm-3 body">Marketo</div> -->
-  					<a href="sampleproduct2.html"><div class="col-6 col-sm-3 body" id="google-analytics">Google Analytics</div></a>
-  					<a href="sampleproduct.html"><div class="col-6 col-sm-3 body" id="salesforce">Salesforce</div></a>
+  					<a href="sampleproduct2.html"><div class="col-6 col-sm-3 body" id="google-analytics"></div></a>
+  					<a href="sampleproduct.html"><div class="col-6 col-sm-3 body" id="salesforce" ></div></a>
 				</div>
 			</div>
 			<div class="stack" id="analytics-and-reporting">
@@ -220,7 +219,8 @@
       	var label = ui.item.label;
       	console.log(availableMarTechs[label]);
       	var id = "#" + availableMarTechs[label].id;
-      	$(id).css("display", "block");      
+      	// $(id).delay(300).css("display", "block").fadeIn(2200);
+      	$(id).delay(200).fadeIn(2200);   
        }
     });
   } );
