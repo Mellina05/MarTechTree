@@ -117,9 +117,12 @@ function showCheck(name){
 }
 
 
-function added(){
-  console.log(document.getElementById("add-to-stack").innerHTML.text);
-  // if(document.getElementById("add-to-stack").innerHTML ==  "Add to Stack")
-    document.getElementById("add-to-stack").innerHTML = "ADDED";
-
+function added(id){
+  var toChange = document.getElementById(id).innerHTML;
+  console.log(toChange);
+  if(toChange === "Add to Stack"){
+    document.getElementById(id).innerHTML = "ADDED to Stack";
+  }
+  else
+    document.getElementById(id).innerHTML = "Add to Stack";
 }
