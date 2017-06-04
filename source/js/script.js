@@ -74,8 +74,9 @@ function showCheck(name){
             if(boxes[3].checked){ // email and OT
               data.push("d3");
               // lead to acquisition
-              window.alert("Going to acquisition part");
-              window.location.href='acquisition.html';
+              // window.alert("Going to acquisition part");
+              // window.location.href='acquisition.html';
+              show_content('1_3');
             }
             else{
               show_content('1_2');
@@ -113,4 +114,12 @@ function showCheck(name){
         }
         show_content('data');
       }
+}
+
+
+function added(){
+  console.log(document.getElementById("add-to-stack").innerHTML.text);
+  // if(document.getElementById("add-to-stack").innerHTML ==  "Add to Stack")
+    document.getElementById("add-to-stack").innerHTML = "ADDED";
+
 }
