@@ -772,7 +772,7 @@ font-size: 10pt;
 .information>h1{
 	font-family: 'Lato Black';
 	letter-spacing: 5px;
-	font-size: 40px; 
+	font-size: 35px; 
 	padding-top: 2%; 
 	/*padding-bottom: 2%;*/
 }
@@ -804,7 +804,7 @@ font-size: 10pt;
 .social-media{
   font-family: 'Lato Light';
   letter-spacing: 3px;
-  font-size: 25px; 
+  font-size: 20px; 
   text-align: left;
 }
 
