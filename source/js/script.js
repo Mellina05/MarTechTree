@@ -141,7 +141,7 @@ function showCheck(name){
 function added(id){
   var toChange = document.getElementById(id).innerHTML;
   console.log(toChange);
-  if(toChange === "Add to Stack"){
+  if(toChange == "Add to Stack"){
     document.getElementById(id).innerHTML = "ADDED to Stack";
   }
   else
