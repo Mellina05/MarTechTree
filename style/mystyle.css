@@ -819,8 +819,8 @@ td{
 #finalTree{
   background-image: url(../img/tree.png);
   background-repeat:no-repeat;
-  background-size: 90% 100%; 
-  background-position: center;
+  background-size: 60% 100%; 
+  background-position: 80% 0;
   margin-bottom: 5%;
 }
 
@@ -831,9 +831,9 @@ td{
   /*border: solid 2px;*/
   margin-top: 2%;
   margin-bottom: 2%;
-  /*background-color: #f2f2f2;*/
+  background: rgba(242, 242, 242, 0.7);
   border-radius: 10px;
-  border: 1px #f3bf30 solid;
+  /*border: 1px #f3bf30 solid;*/
   /*padding: 3%;*/
   /*box-shadow: 8px 8px 5px #cccccc;*/
 
