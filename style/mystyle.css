@@ -566,7 +566,7 @@ font-size: 10pt;
 	padding: 0px;
 	margin-bottom: 2%;
 	letter-spacing: 2px;
-	font-family: 'OpenSans-Light';
+	font-family: 'Lato Light';
 	/*color: #020243;*/
 	font-size: 25px;
 
@@ -669,7 +669,7 @@ font-size: 10pt;
  	color: #fff;
  }
 
-
+/*
 .tooltip {
     position: relative;
     /*display: inline-block;
@@ -708,7 +708,7 @@ font-size: 10pt;
     visibility: visible;
     opacity: 1;
 }
-
+*/
 
 /*node style*/
 .node-style{
