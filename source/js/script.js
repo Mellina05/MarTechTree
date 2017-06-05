@@ -23,16 +23,6 @@ function show_content(id){
 
       if(document.getElementById(recommendation_id))
         document.getElementById(recommendation_id).style.display='none';
-
-      progress_id = parent_id + "_progress";
-      this_progress_id = id + "_progress";
-
-      if(document.getElementById(this_progress_id))
-        document.getElementById(this_progress_id).style.display='block';
-
-      if(document.getElementById(progress_id))
-        document.getElementById(progress_id).style.display='none';
-
   	}
 
 function return_content(id){
@@ -43,8 +33,6 @@ function return_content(id){
     document.getElementsByClassName("data_button")[0].style.display='none';
   if(document.getElementById("data_recommendation"))
     document.getElementById("data_recommendation").style.display='none';
- if(document.getElementById("data_progress"))
-    document.getElementById("data_progress").style.display='none';
 
   if(document.getElementById(id))  
     document.getElementById(id).style.display='none';
@@ -70,15 +58,6 @@ function return_content(id){
 
   if(document.getElementById(recommendation_id))
     document.getElementById(recommendation_id).style.display='block';
-
-  progress_id = parent_id + "_progress";
-      this_progress_id = id + "_progress";
-
-      if(document.getElementById(this_progress_id))
-        document.getElementById(this_progress_id).style.display='none';
-
-      if(document.getElementById(progress_id))
-        document.getElementById(progress_id).style.display='block';
 }
 
 function showCheck(name){
