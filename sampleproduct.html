@@ -50,8 +50,8 @@
 				<a><img id="tableau" src="img/tableau.jpg" style ="margin-left:150px"></a>
 				
 			</div>
-		</h1>
-		
+
+		</h1>		
 	<div class="panel-body">
 		<br></br>
 		<br></br>
@@ -109,16 +109,13 @@
 		<br></br>
 		<div class="newslettercontent">
 			<div class="leftside" >
-
-				
-					<div class="contact-form">
-
-							<div class="question" style ="font-size:25px; text-align:center; marign-right: 10%">
-								<p style= "border: #000000 solid thin; padding: 10px ">
-								<br></br>
+				<div class="contact-form">
+					<div class="question" style ="font-size:25px; text-align:center; marign-right: 10%">
+					<p style= "border: #000000 solid thin; padding: 10px ">
+					<br></br>
 								
 						
-								Tableau is a product to help users understnad their market. By analyzing data and information it can help any buisness acheive their goal of gaining and retaining customers. You can learn more about their product at their <a style="color:blue" href="https://www.tableau.com/">webiste.</a>
+								Tableau is a product to help users understand their market. By analyzing data and information it can help any buisness acheive their goal of gaining and retaining customers. You can learn more about their product at their <a style="color:blue" href="https://www.tableau.com/">website.</a>
 								<br></br>
 								</p>
 								
@@ -171,15 +168,13 @@
 				</h1>
 				</div>
 			</div>
-			
-			<div class="google-maps">
-				 <div id="googleMap"></div>
-
-			</div>
 		</div>
 
 
 
+	</div>
+	<div id="decButton">
+      	<button onclick="window.location.href='understand1.html'"><span class="postnewcar">Return to Journey</span></button>
 	</div>
 </div>
 <!-- ___________________Bottom Menu ____________________-->
@@ -204,50 +199,9 @@
 			
 		</div>
 
-<script src="//maps.googleapis.com/maps/api/js"></script>
-<script>
-
-var myCenter=new google.maps.LatLng(42.059384, -87.677171);
-
-function initialize()
-{
-var mapProp = {
-  center:myCenter,
-  zoom:16,
-  mapTypeId:google.maps.MapTypeId.ROADMAP
-  };
-
-var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
-
-var marker=new google.maps.Marker({
-  position:myCenter,
-  });
-
-marker.setMap(map);
-}
-
-
-
-</script>
 
 <script type="text/javascript" src="source/bootstrap-3.3.6-dist/js/jquery.js"></script>
 <script type="text/javascript" src="source/js/myscript.js"></script> <script type="text/javascript" src="source/bootstrap-3.3.6-dist/js/bootstrap.js"></script>
-
-<script>
-	$(window).resize(function(){
-		var new_height = $("#image_border").height();
-		console.log(new_height);
-		$("#googleMap").height(new_height);
-	});
-
-	$(window).load(function(){
-		var new_height = $("#image_border").height();
-		console.log(new_height);
-		$("#googleMap").height(new_height);
-		google.maps.event.addDomListener(window, 'load', initialize());
-	});
-	
-</script>
 <script type="text/javascript" src="source/js/myscript.js"></script>
 <script type="text/javascript" src="source/bootstrap-3.3.6-dist/js/jquery.1.11.js"></script>
 </body>

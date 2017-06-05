@@ -1,0 +1,664 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>MarTech Tree</title>
+	<meta name="description" content="">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="source/bootstrap-3.3.6-dist/css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="source/font-awesome-4.5.0/css/font-awesome.css">
+	<link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+	<link rel="stylesheet" type="text/css" href="style/slider.css">
+	<link rel="stylesheet" type="text/css" href="style/mystyle.css">
+	<link rel="shortcut icon" type="image/png" href="img/tree-big.png"/>
+
+</head>
+<body>
+
+<!-- ____________________Header____________________________ -->
+<div style="border: 2px solid #f3bf30; height: 150px; margin-bottom: 5%; background-color: #f3bf30;">
+	<a class="navbar-brand logo" href="index.html"><img src="img/MarTTree.png" width="220" height="120" alt="logo"></a>
+	<div class="collapse navbar-collapse" id="upmenu" style="margin-top: 3%;">
+			<ul class="nav navbar-nav" id="navbarontop">
+				<li class="active"><a href="index.html">HOME</a></li>
+				<li class="dropdown">
+					<a href="#" class="dropdown-toggle"	data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Vendors<span class="caret"></span></a>
+					<ul class="dropdown-menu dropdowncostume" style="background: #f7d26e">
+						<li><a href="v_login.html">Login/Sign up</a></li>
+						<li><a href="#">Post new product</a></li>
+						<li><a href="#">View Profile</a></li>
+					</ul>
+				</li>
+				<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Marketers<span class="caret"></span></a>
+						<ul class="dropdown-menu dropdowncostume" style="background: #f7d26e">
+							<li><a href="m_login.html">Login/Sign up</a></li>
+							<li><a href="decision_tree.html">Your Tree</a></li>
+							<li><a href="preference_page.html">Update your preference</a></li>
+						</ul>
+				</li>
+				<li><a href="contact.html">CONTACT US</a></li>
+				<button onclick="window.location.href='decision_tree.html'"><span class="postnewcar">BUILD YOUR TREE</span></button>
+			</ul>
+	</div>
+</div>
+<!-- ____________________Header End____________________________ -->
+
+<div class="container">
+	<div class="progress" style="display: block; width: 100%; height: 120px;background-color: white;">
+    <img id="1_progress" src="img/bars/bar-retain.png" style="display: none; width: 100%; height: 70%;">
+    <img id="data_progress" src="img/bars/bar-data.png" style="display: block; width: 100%; height: 100%">
+  </div>
+  <!--____________________ Main question and education part ______________________-->
+  <div class="assistent">
+    <div class="navbar-brand logo" style="position: relative; margin-right: 0px;"><img src="img/advicer icon.png" width="220" height="120" ></div>
+	<div class="decQuestion" id="question" style="margin-left: 10%;">
+    <!-- Understanding customer question -->
+    <h1 id="1" style="display: none;">What current customer data do you have?</h1>
+    <!-- No data -->
+    <h1 id="1_0" style="display: none;">Would you like to start building your customer database?</h1>  
+    <h1 id="1_0_1" style="display: none;">Since you don't have any data. Here is our suggestion:</h1>   
+
+    
+    <h1 id="data" style="display: block;">
+      This is what you have: 
+      <div id="d1" style="display: block;">Store Transaction</div>
+      <div id="d2" style="display: none;">Phone number and address</div> 
+      <div id="d3" style="display: none;">Email address and Online Transaction</div>
+      <div id="d4" style="display: none;">Social Media</div>
+      <div id="d5" style="display: none;">Web Activity</div>
+      <div id="d6" style="display: none;">App Activity</div>
+      And here is our recommendation:
+    </h1>
+  </div>
+  <!-- </div> -->
+
+
+	<!-- database sections -->
+<div id="data_recommendation">
+  <!-- no data -->
+	<div class="section" id="1_0_1_recommendation" style="display: none;">
+  			<div class="panel-group">
+    			<div class="panel panel-default">
+    				<a data-toggle="collapse" href="#collapse1">
+      				<div class="panel-heading">
+        				<h4 class="panel-title" style="font-size: 30px">
+          					Customer Database Management
+        				</h4>
+      				</div>
+      				</a>
+      				<div id="collapse1" class="panel-collapse collapse">
+        				<div class="panel-body">
+        					<div class="node" style="margin: auto;">
+								<div class="row">
+									<div class="outer">
+  									<div class="col-6 col-sm-3 product">
+  										<h1>Excel</h1>
+  										<div style="color: #C59E47;margin-top: 0;">
+                							<div class="glyphicon glyphicon-star"></div>
+                							<div class="glyphicon glyphicon-star"></div>
+                							<div class="glyphicon glyphicon-star"></div>
+              							</div>
+  										<!-- <p>Description</p> -->
+  										<div id="small-button">
+											<button onclick=""><span>Read More</span></button>
+                      <button onclick=""><span>Add to stack</span></button>
+										</div>
+  									</div>
+  									<div class="col-6 col-sm-3 product">
+  										<h1 style="font-size: 30px;">Google SpreadSheet</h1>
+  										<div style="color: #C59E47;margin-top: 0;">
+                							<div class="glyphicon glyphicon-star"></div>
+                							<div class="glyphicon glyphicon-star"></div>
+                							<div class="glyphicon glyphicon-star"></div>
+              							</div>
+  										<!-- <p>Description</p> -->
+  										<div id="small-button">
+											<button onclick=""><span>Read More</span></button>
+                      <button onclick=""><span>Add to stack</span></button>
+										</div>
+  									</div>
+  									
+  									<div class="col-6 col-sm-3 product">
+  										
+  										<h1>Salesforce</h1>
+  										<div style="color: #C59E47;margin-top: 0;">
+                							<div class="glyphicon glyphicon-star"></div>
+                							<div class="glyphicon glyphicon-star"></div>
+              							</div>
+  										<!-- <p>Description</p> -->
+  										<div id="small-button">
+											<button onclick="window.location.href='sampleproduct.html'" ><span>Read More</span></button>
+                      <button onclick=""><span>Add to stack</span></button>
+										</div>
+  									</div>
+  									</div>
+  									
+  									<div class="col-6 col-sm-3 product">
+  										
+  										<!-- <h1>Product D</h1>
+  										<div style="color: #C59E47;margin-top: 0;">
+                							<div class="glyphicon glyphicon-star"></div>
+              							</div>
+  										<p>Description</p> -->
+  										<div id="small-button">
+											<button id="more" style="margin-top: 45%;"><span>More MarTech</span></button>
+										</div>
+  									
+  									</div>
+								</div>
+							</div>
+        				</div>
+      				</div>
+    			</div>
+			</div>
+	</div>
+<!-- store stransaction -->
+	<div class="section" id="1_1_recommendation" style="display: block;">
+		<div class="panel-group">
+    			<div class="panel panel-default">
+      				<a data-toggle="collapse" href="#collapse2">
+      				<div class="panel-heading">
+        				<h4 class="panel-title" style="font-size: 30px">
+          					Data Analysis<div style="font-size: 20px;">analyze the data you have to better understand your customers and their buying patterns</div>
+        				</h4>
+      				</div>
+      				</a>
+      				<div id="collapse2" class="panel-collapse collapse">
+        				<div class="panel-body">
+        					<div class="node" style="margin: auto;">
+								<div class="row">
+  									<div class="col-6 col-sm-3 product">
+                    <img src="img/tableau.png" style="height: 40%; width: 100%; margin-bottom: 5%">
+  										<!-- <h1>Tableau</h1> -->
+  										<div id="small-button">
+
+                      <button onclick="window.location.href='sampleproduct.html'" ><span>Read More</span></button>
+											<button onclick="added('add1')"><span id="add1">Add to Stack</span></button>
+										</div>
+  									</div>
+  									<div class="col-6 col-sm-3 product">
+  										<img src="img/umbel.png" style="height: 40%; width: 100%; margin-bottom: 5%">
+  										
+  										<div id="small-button">
+                        <button ><span>Read More</span></button>
+											<button onclick="added('add2')"><span id="add2">Add to Stack</span></button>
+										</div>
+  									</div>
+  									
+  									<div class="col-6 col-sm-3 product">
+  										
+  										<img src="img/custora.png" style="height: 40%; width: 100%; margin-bottom: 5%">
+  										<div id="small-button">
+                        <button><span>Read More</span></button>
+											<button onclick="added('add3')"><span id="add3">Add to Stack</span></button>
+										</div>
+  									</div>
+  									
+  									<div class="col-6 col-sm-3 product" style="">
+  										
+  										<!-- <h1>Custora</h1> -->
+  										<div id="small-button">
+                        <button style="margin-top: 40%;"><span>More MarTech</span></button>
+											<!-- <button onclick=""><span>Add to stack</span></button> -->
+										</div>
+  									
+  									</div>
+								</div>
+							</div>
+        				</div>
+        
+      				</div>
+    			</div>
+		</div>
+	</div>
+
+<!-- store transaction + address -->
+	<div class="section" id="1_2_recommendation" style="display: none;">
+		<div class="panel-group">
+    			<div class="panel panel-default">
+      				<a data-toggle="collapse" href="#collapse3">
+      				<div class="panel-heading">
+        				<h4 class="panel-title" style="font-size: 30px">
+          					Demographics Segmentation
+        				</h4>
+      				</div>
+      				</a>
+      				<div id="collapse3" class="panel-collapse collapse">
+        				<div class="panel-body">
+        					<div class="node" style="margin: auto;">
+								<div class="row">
+  									<div class="col-6 col-sm-3 product">
+  										<h1>Product A</h1>
+  										<div style="color: #C59E47;margin-top: 0;">
+                							<div class="glyphicon glyphicon-star"></div>
+                							<div class="glyphicon glyphicon-star"></div>
+                							<div class="glyphicon glyphicon-star"></div>
+              							</div>
+  										<p>Description</p>
+  										<div id="small-button">
+											<button onclick=""><span>Add to stack</span></button>
+										</div>
+  									</div>
+  									<div class="col-6 col-sm-3 product">
+  										<h1>Product B</h1>
+  										<div style="color: #C59E47;margin-top: 0;">
+                							<div class="glyphicon glyphicon-star"></div>
+                							<div class="glyphicon glyphicon-star"></div>
+                							<div class="glyphicon glyphicon-star"></div>
+              							</div>
+  										<p>Description</p>
+  										<div id="small-button">
+											<button onclick=""><span>Add to stack</span></button>
+										</div>
+  									</div>
+  									
+  									<div class="col-6 col-sm-3 product">
+  										
+  										<h1>Product C</h1>
+  										<div style="color: #C59E47;margin-top: 0;">
+                							<div class="glyphicon glyphicon-star"></div>
+                							<div class="glyphicon glyphicon-star"></div>
+              							</div>
+  										<p>Description</p>
+  										<div id="small-button">
+											<button onclick=""><span>Add to stack</span></button>
+										</div>
+  									</div>
+  									
+  									<div class="col-6 col-sm-3 product">
+  										
+  										<h1>Product D</h1>
+  										<div style="color: #C59E47;margin-top: 0;">
+                							<div class="glyphicon glyphicon-star"></div>
+              							</div>
+  										<p>Description</p>
+  										<div id="small-button">
+											<button onclick=""><span>Add to stack</span></button>
+										</div>
+  									
+  									</div>
+								</div>
+							</div>
+        				</div>
+        
+      				</div>
+    			</div>
+		</div>
+	</div>
+<!--_____________Email _____________________ -->
+<div class="section" id="1_3_recommendation" style="display: none;">
+    <div class="panel-group">
+          <div class="panel panel-default">
+              <a data-toggle="collapse" href="#collapse3-1">
+              <div class="panel-heading">
+                <h4 class="panel-title" style="font-size: 30px">
+                    Demographics Segmentation
+                </h4>
+              </div>
+              </a>
+              <div id="collapse3-1" class="panel-collapse collapse">
+                <div class="panel-body">
+                  <div class="node" style="margin: auto;">
+                <div class="row">
+                    <div class="col-6 col-sm-3 product">
+                      <h1>Product A</h1>
+                      <div style="color: #C59E47;margin-top: 0;">
+                              <div class="glyphicon glyphicon-star"></div>
+                              <div class="glyphicon glyphicon-star"></div>
+                              <div class="glyphicon glyphicon-star"></div>
+                            </div>
+                      <p>Description</p>
+                      <div id="small-button">
+                      <button onclick=""><span>Add to stack</span></button>
+                    </div>
+                    </div>
+                    <div class="col-6 col-sm-3 product">
+                      <h1>Product B</h1>
+                      <div style="color: #C59E47;margin-top: 0;">
+                              <div class="glyphicon glyphicon-star"></div>
+                              <div class="glyphicon glyphicon-star"></div>
+                              <div class="glyphicon glyphicon-star"></div>
+                            </div>
+                      <p>Description</p>
+                      <div id="small-button">
+                      <button onclick=""><span>Add to stack</span></button>
+                    </div>
+                    </div>
+                    
+                    <div class="col-6 col-sm-3 product">
+                      
+                      <h1>Product C</h1>
+                      <div style="color: #C59E47;margin-top: 0;">
+                              <div class="glyphicon glyphicon-star"></div>
+                              <div class="glyphicon glyphicon-star"></div>
+                            </div>
+                      <p>Description</p>
+                      <div id="small-button">
+                      <button onclick=""><span>Add to stack</span></button>
+                    </div>
+                    </div>
+                    
+                    <div class="col-6 col-sm-3 product">
+                      
+                      <h1>Product D</h1>
+                      <div style="color: #C59E47;margin-top: 0;">
+                              <div class="glyphicon glyphicon-star"></div>
+                            </div>
+                      <p>Description</p>
+                      <div id="small-button">
+                      <button onclick=""><span>Add to stack</span></button>
+                    </div>
+                    
+                    </div>
+                </div>
+              </div>
+                </div>
+        
+              </div>
+          </div>
+    </div>
+  </div>
+
+<!-- social listening -->
+	<div class="section" id="1_4_recommendation" style="display: none;">
+		<div class="panel-group">
+    			<div class="panel panel-default">
+      				<a data-toggle="collapse" href="#collapse4">
+      				<div class="panel-heading">
+        				<h4 class="panel-title" style="font-size: 30px">
+          					Social Listening Tools
+        				</h4>
+      				</div>
+      				</a>
+      				<div id="collapse4" class="panel-collapse collapse">
+        				<div class="panel-body">
+        					<div class="node" style="margin: auto;">
+								<div class="row">
+  									<div class="col-6 col-sm-3 product">
+  										<h1>Srousesocial</h1>
+  										<div style="color: #C59E47;margin-top: 0;">
+                							<div class="glyphicon glyphicon-star"></div>
+                							<div class="glyphicon glyphicon-star"></div>
+                							<div class="glyphicon glyphicon-star"></div>
+              							</div>
+  										<p>Description</p>
+  										<div id="small-button">
+											<button onclick=""><span>Add to stack</span></button>
+										</div>
+  									</div>
+  									<div class="col-6 col-sm-3 product">
+  										<h1>Radian6</h1>
+  										<div style="color: #C59E47;margin-top: 0;">
+                							<div class="glyphicon glyphicon-star"></div>
+                							<div class="glyphicon glyphicon-star"></div>
+                							<div class="glyphicon glyphicon-star"></div>
+              							</div>
+  										<p>Description</p>
+  										<div id="small-button">
+											<button onclick=""><span>Add to stack</span></button>
+										</div>
+  									</div>
+  									
+  									<div class="col-6 col-sm-3 product">
+  										
+  										<h1>Hashtagify</h1>
+  										<div style="color: #C59E47;margin-top: 0;">
+                							<div class="glyphicon glyphicon-star"></div>
+                							<div class="glyphicon glyphicon-star"></div>
+              							</div>
+  										<p>Description</p>
+  										<div id="small-button">
+											<button onclick=""><span>Add to stack</span></button>
+										</div>
+  									</div>
+  									
+  									<div class="col-6 col-sm-3 product">
+  										
+  										<h1>Klout</h1>
+  										<div style="color: #C59E47;margin-top: 0;">
+                							<div class="glyphicon glyphicon-star"></div>
+              							</div>
+  										<p>Description</p>
+  										<div id="small-button">
+											<button onclick=""><span>Add to stack</span></button>
+										</div>
+  									
+  									</div>
+								</div>
+							</div>
+        				</div>
+        
+      				</div>
+    			</div>
+		</div>
+	</div>
+
+  <!-- website_analysis -->
+	<div class="section" id="1_5_recommendation" style="display: none;">
+		<div class="panel-group">
+    			<div class="panel panel-default">
+      				<a data-toggle="collapse" href="#collapse5">
+      				<div class="panel-heading">
+        				<h4 class="panel-title" style="font-size: 30px">
+          					Web Analysis
+        				</h4>
+      				</div>
+      				</a>
+      				<div id="collapse5" class="panel-collapse collapse">
+        				<div class="panel-body">
+        					<div class="node" style="margin: auto;">
+								<div class="row">
+  									<div class="col-6 col-sm-3 product">
+  										<h1>Google Analytics</h1>
+  										<div style="color: #C59E47;margin-top: 0;">
+                							<div class="glyphicon glyphicon-star"></div>
+                							<div class="glyphicon glyphicon-star"></div>
+                							<div class="glyphicon glyphicon-star"></div>
+              							</div>
+  										<p>Description</p>
+  										<div id="small-button">
+											<button onclick=""><span>Add to stack</span></button>
+										</div>
+  									</div>
+  									<div class="col-6 col-sm-3 product">
+  										<h1>GoSquared</h1>
+  										<div style="color: #C59E47;margin-top: 0;">
+                							<div class="glyphicon glyphicon-star"></div>
+                							<div class="glyphicon glyphicon-star"></div>
+                							<div class="glyphicon glyphicon-star"></div>
+              							</div>
+  										<p>Description</p>
+  										<div id="small-button">
+											<button onclick=""><span>Add to stack</span></button>
+										</div>
+  									</div>
+  									
+  									<div class="col-6 col-sm-3 product">
+  										
+  										<h1>Builtwith</h1>
+  										<div style="color: #C59E47;margin-top: 0;">
+                							<div class="glyphicon glyphicon-star"></div>
+                							<div class="glyphicon glyphicon-star"></div>
+              							</div>
+  										<p>Description</p>
+  										<div id="small-button">
+											<button onclick=""><span>Add to stack</span></button>
+										</div>
+  									</div>
+  									
+  									<div class="col-6 col-sm-3 product">
+  										
+  										<h1>TrackMaven</h1>
+  										<div style="color: #C59E47;margin-top: 0;">
+                							<div class="glyphicon glyphicon-star"></div>
+              							</div>
+  										<p>Description</p>
+  										<div id="small-button">
+											<button onclick=""><span>Add to stack</span></button>
+										</div>
+  									
+  									</div>
+								</div>
+							</div>
+        				</div>
+        
+      				</div>
+    			</div>
+		</div>
+	</div>
+  <!-- app_analysis -->
+	<div class="section" id="1_6_recommendation" style="display: none;">
+		<div class="panel-group">
+    			<div class="panel panel-default">
+      				<a data-toggle="collapse" href="#collapse6">
+      				<div class="panel-heading">
+        				<h4 class="panel-title" style="font-size: 30px">
+          					App Analysis
+        				</h4>
+      				</div>
+      				</a>
+      				<div id="collapse6" class="panel-collapse collapse">
+        				<div class="panel-body">
+        					<div class="node" style="margin: auto;">
+								<div class="row">
+  									<div class="col-6 col-sm-3 product">
+  										<h1>Product A</h1>
+  										<div style="color: #C59E47;margin-top: 0;">
+                							<div class="glyphicon glyphicon-star"></div>
+                							<div class="glyphicon glyphicon-star"></div>
+                							<div class="glyphicon glyphicon-star"></div>
+              							</div>
+  										<p>Description</p>
+  										<div id="small-button">
+											<button onclick=""><span>Add to stack</span></button>
+										</div>
+  									</div>
+  									<div class="col-6 col-sm-3 product">
+  										<h1>Product B</h1>
+  										<div style="color: #C59E47;margin-top: 0;">
+                							<div class="glyphicon glyphicon-star"></div>
+                							<div class="glyphicon glyphicon-star"></div>
+                							<div class="glyphicon glyphicon-star"></div>
+              							</div>
+  										<p>Description</p>
+  										<div id="small-button">
+											<button onclick=""><span>Add to stack</span></button>
+										</div>
+  									</div>
+  									
+  									<div class="col-6 col-sm-3 product">
+  										
+  										<h1>Product C</h1>
+  										<div style="color: #C59E47;margin-top: 0;">
+                							<div class="glyphicon glyphicon-star"></div>
+                							<div class="glyphicon glyphicon-star"></div>
+              							</div>
+  										<p>Description</p>
+  										<div id="small-button">
+											<button onclick=""><span>Add to stack</span></button>
+										</div>
+  									</div>
+  									
+  									<div class="col-6 col-sm-3 product">
+  										
+  										<h1>Product D</h1>
+  										<div style="color: #C59E47;margin-top: 0;">
+                							<div class="glyphicon glyphicon-star"></div>
+              							</div>
+  										<p>Description</p>
+  										<div id="small-button">
+											<button onclick=""><span>Add to stack</span></button>
+										</div>
+  									
+  									</div>
+								</div>
+							</div>
+        				</div>
+        
+      				</div>
+    			</div>
+		</div>
+	</div>
+
+</div>
+
+</div>
+  <div>
+  <!--___________________ Multi Choices ______________________ -->
+    <div id="decButton" class="1_button" style="display: none;">
+    <div class="cstm-data-check">
+      <label style="width: 100%; margin-bottom: 1%;"><input type="checkbox" class="check" id="check_0">I don't have any data</label>
+      <label style="margin-bottom: 1%"><input type="checkbox" class="check" id="check_1">Store Transaction</label>
+      <label style="margin-bottom: 1%"><input type="checkbox" class="check" id="check_2">Phone Number and/or Address</label>
+      <label style="margin-bottom: 1%"><input type="checkbox" class="check" id="check_3">Email Address and Online Transaction</label> 
+      <label><input type="checkbox" class="check" id="check_4">Social Media </label>
+      <label><input type="checkbox" class="check" id="check_5">Customer Web Activity </label>
+      <label><input type="checkbox" class="check" id="check_6">Customer App Activity </label>
+    </div>
+    <button onclick="showCheck('check')"><span class="postnewcar">Continue</span></button>
+    <button onclick="window.location.href='decision_tree.html'"><span class="postnewcar">Return</span></button>
+  </div>
+
+  <!--_________ Page Before no Data __________ -->
+  <div id="decButton" class="1_0_button" style="display: none;">
+    <button onclick="show_content('1_0_1')"><span class="postnewcar">Yes, learn more</span></button>
+    <button onclick="return_content('1_0')"><span class="postnewcar">No, Return</span></button>
+  </div>
+<!--____________Rcmmdtn for no data __________________-->
+  <div id="decButton" class="1_0_1_button" style="display: none;">
+    <button onclick="window.location.href='retention.html'"><span class="postnewcar">Save and Continue</span></button>
+    <button onclick="return_content('1_0_1')"><span class="postnewcar">Return</span></button>
+  </div>
+
+<!--_________________ Rcmmdtn for all data button _______________________-->
+  <div id="decButton" class="data_button" style="display: block;">
+    <button onclick="window.location.href='retention.html'"><span class="postnewcar">Save and Continue</span></button>
+    <button onclick="return_content('1_1')"><span class="postnewcar">Return</span></button>
+  </div>
+
+</div>
+
+
+</div>
+
+
+
+			
+
+
+
+<!-- ___________________Bottom Menu ____________________-->
+<div class="bottomlogo">
+	<a href="index.html"><span class="dotlogo">&bullet;</span><img src="img/MarTTree.png" width="400" height="200" alt="logo"><span class="dotlogo">&bullet;</span></a>
+</div>
+<div class="bottommenu" style="background: #f3bf30">
+	<ul class="nav nav-tabs bottomlinks" style="padding-top: 1%">
+		<li role="presentation" ><a href="#/" role="button">ABOUT US</a></li>
+		<li role="presentation"><a href="#/">MARTECH TREE</a></li>
+		<li role="presentation"><a href="#/">DECISION TREE</a></li>
+		<li role="presentation"><a href="contact.html">CONTACT US</a></li>
+	</ul>
+	<p style="padding-top: 1%; margin-bottom: 1%">"Our Motto"</p>
+	<img style="padding-top: 1%;margin-top: 1%" src="img/line.png" alt="line"> <br>
+	<div class="bottomsocial">
+		<a href="#"><i class="fa fa-facebook"></i></a>
+		<a href="#"><i class="fa fa-twitter"></i></a>
+		<a href="#"><i class="fa fa-google-plus"></i></a>
+		<a href="#"><i class="fa fa-pinterest"></i></a>
+	</div>
+</div>
+
+
+<script type="text/javascript" src="source/bootstrap-3.3.6-dist/js/jquery.js"></script>
+<script type="text/javascript" src="source/js/isotope.js"></script>
+<script type="text/javascript" src="source/js/myscript.js"></script> 
+<script type="text/javascript" src="source/js/script.js"></script> 
+<script type="text/javascript" src="source/bootstrap-3.3.6-dist/js/jquery.1.11.js"></script>
+<script type="text/javascript" src="source/bootstrap-3.3.6-dist/js/bootstrap.js"></script>
+
+
+</body>
+</html>
