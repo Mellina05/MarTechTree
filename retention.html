@@ -12,6 +12,7 @@
 	<link rel="stylesheet" type="text/css" href="style/slider.css">
 	<link rel="stylesheet" type="text/css" href="style/mystyle.css">
 	<link rel="shortcut icon" type="image/png" href="img/tree-big.png"/>
+
 </head>
 <body>
 <!-- Header -->
@@ -51,32 +52,32 @@
   </div>
   <!-- Title or Indicator bar -->
   <div class="assistent">
-    <div class="navbar-brand logo"><img src="img/advicer icon.png" width="220" height="120" ></div>
-    <div class="decQuestion" id="first">
-        <h1>You have chosen to continue to the customer retention limb.</h1>
-    </div>
+    <div class="navbar-brand logo" style="position: relative; margin-right: 0px;"><img src="img/advicer icon.png" width="220" height="120" ></div>
+    <!-- <div class="decQuestion" id="first" style="margin-left: 10%;">
+        <h1>You have chosen to continue to the customer retention branch.</h1>
+    </div> -->
     
 
   <!-- Main Question or Education Content -->
-  <div class="decQuestion" id="question">
+  <div class="decQuestion" id="question" style="margin-left: 10%;">
     <!-- Understanding customer question -->
     <!-- <h1 class="text-center" id="1" style="display: block;">Step 1: What current customer data do you have?</h1> -->
 
     <!-- start retain -->
-    <h1 class="text-center" id="1" style="display: block;">Step 2: Here I recommend two approches to retain current customers.</h1>
+    <h1 id="1" style="display: block;">Here I recommend two approches to retain current customers.</h1>
 
     <!-- boost sale option -->
-    <h1 class="text-center" id="1_1" style="display: none;"> To boost sales with current customers, businesses need to go through the following three steps:<br>
+    <h1 id="1_1" style="display: none;"> To boost sales with current customers, businesses need to go through the following three steps:<br>
     Increase your brand awareness --> Offer incentives --> Fabilitate repeated purchases </h1>
-    <h1 class="text-center" id="1_1_1" style="display: none;"> Step 3: Brand awareness</h1>
-    <h1 class="text-center" id="1_1_1_1" style="display: none;"> Step 4: Offer incentives</h1>
-    <h1 class="text-center" id="1_1_1_1_1" style="display: none;"> Step 5: Facilitate repeated purchases</h1>
+    <h1 id="1_1_1" style="display: none;"> Step 3: Brand awareness</h1>
+    <h1 id="1_1_1_1" style="display: none;"> Step 4: Offer incentives</h1>
+    <h1 id="1_1_1_1_1" style="display: none;"> Step 5: Facilitate repeated purchases</h1>
 
     <!-- strengthen customer relationship -->
-    <h1 class="text-center" id="1_2" style="display: none;">Step 3: To strengthen customer relationship, there are three categories of marketing technologies you can adopt</h1>
-    <h1 class="text-center" id="1_2_1" style="display: none;">Step 4: CRM</h1>
-    <h1 class="text-center" id="1_2_2" style="display: none;">Step 4: Customer Loyalty</h1>
-	  <h1 class="text-center" id="1_2_3" style="display: none;">Step 4: Brand Advocacy</h1>   		    
+    <h1 id="1_2" style="display: none;">If your decide to strengthen customer relationship,<br> there are three categories of marketing technologies you can adopt</h1>
+    <h1 id="1_2_1" style="display: none;">CRM</h1>
+    <h1 id="1_2_2" style="display: none;">Customer Loyalty</h1>
+	  <h1 id="1_2_3" style="display: none;">Brand Advocacy</h1>   		    
   </div>
 <!-- </div> -->
 <!-- Understand part -->
@@ -1201,8 +1202,9 @@
 	
 
 		<div id="decButton" class="1_button" style="display: block;">
-			<button onclick="show_content('1_1')"><span class="postnewcar">Boost sales with current customers</span></button>
-			<button onclick="show_content('1_2')"><span class="postnewcar">Strengthen Relationships with current customers</span></button>
+			<button onclick="show_content('1_1')" style="width: 43%; font-size: 18px;"><span class="tips">Boost sales with current customers <div class="tipstext">make current customers make more from you</div></span></button>
+			<button onclick="show_content('1_2')" style="width: 43%; font-size: 18px;"><span class="tips">Strengthen relationships with current customers<div class="tipstext">make current customers stay with you and share your products with others</div></span></button>
+      <br>
       		<button onclick="window.location.href='understand.html'"><span class="postnewcar">Return</span></button>
 		</div>
 
@@ -1247,11 +1249,11 @@
 
 		<div id="decButton" class="1_2_button" style="display: none;">
 
-      		<button onclick="show_content('1_2_1')"><span class="postnewcar">Customer Relationship Management (CRM)</span></button> 
+      		<button onclick="show_content('1_2_1')"><span class="postnewcar">Customer Relationship Management (CRM)<div style="font-size: 15px">store and manage current customer based on the database</div></span></button> 
       		<!-- recommendation page-->
-      		<button onclick="show_content('1_2_2')"><span class="postnewcar">Customer Loyalty</span></button>
+      		<button onclick="show_content('1_2_2')"><span class="postnewcar">Customer Loyalty<div style="font-size: 15px">make current customers stick with you</div></span></button>
 
-      		<button onclick="show_content('1_2_3')"><span class="postnewcar">Brand Advocacy<div style="font-size: 20px">Word of mouth, referal</div></span></button>
+      		<button onclick="show_content('1_2_3')"><span class="postnewcar">Brand Advocacy<div style="font-size: 15px">make current customers refer you to others</div></span></button>
       		<button onclick="return_content('1_2')"><span class="postnewcar">Return</span></button>
 		</div>
 
@@ -1317,9 +1319,24 @@
 <script type="text/javascript" src="source/js/script.js"></script>		
 
 <script type="text/javascript" src="source/bootstrap-3.3.6-dist/js/jquery.js"></script>
+
+<script type="text/javascript" src="source/bootstrap-3.3.6-dist/js/bootstrap.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<!-- <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script> -->
 <script type="text/javascript" src="source/js/isotope.js"></script>
 <script type="text/javascript" src="source/js/myscript.js"></script> 
 <script type="text/javascript" src="source/bootstrap-3.3.6-dist/js/jquery.1.11.js"></script>
 <script type="text/javascript" src="source/bootstrap-3.3.6-dist/js/bootstrap.js"></script>
+
+<!-- <script type="text/javascript">
+ // $(function () {
+ //      $(document).tooltip({
+ //          content: function () {
+ //              return $(this).prop('title');
+ //          }
+ //      });
+ //  });
+</script>
+ -->
 </body>
 </html>
