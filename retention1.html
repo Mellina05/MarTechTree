@@ -52,22 +52,58 @@
   </div>
   <!-- Title or Indicator bar -->
   <div class="assistent">
-    <div class="navbar-brand logo" style="position: relative; margin-right: 0px;"><img src="img/advicer icon.png" width="220" height="120" ></div>
+    <div class="navbar-brand logo" style="position: relative; margin-right: 0px;"><img src="img/minerva.png" width="220" height="200" ></div>
     <!-- <div class="decQuestion" id="first" style="margin-left: 10%;">
         <h1>You have chosen to continue to the customer retention branch.</h1>
     </div> -->
     
 
   <!-- Main Question or Education Content -->
-  <div class="decQuestion" id="question" style="margin-left: 10%;">
-    <!-- Understanding customer question -->
-    <!-- <h1 class="text-center" id="1" style="display: block;">Step 1: What current customer data do you have?</h1> -->
+  <div id="1" style="display: none">
+    <div class="decQuestion" style="margin-left: 10%">
+      <h1>Here I recommend two approches to retain current customers:</h1>
+    </div>
+    <div class="decQuestion" style="margin-left: 21%;">
+      <h1>Boost sales with current customer: make current customers make more from you</h1>
+    </div>
+    <div class="decQuestion" style="margin-left: 21%;">
+      <h1>Strengthen relationships with current customers: make current customers stay with you and share your products with others</h1>
+    </div>
+  </div>
 
-    <!-- start retain -->
-    <h1 id="1" style="display: none;">Here I recommend two approches to retain current customers.</h1>
+  <div id="1_2" style="display: none">
+    <div class="decQuestion" id="1" style="margin-left: 10%;">
+      <h1>If your decide to strengthen customer relationship,<br> there are three categories of marketing technologies you can adopt</h1>
+    </div>
+    <div class="decQuestion" id="1" style="margin-left: 21%;">
+      <h1>Customer Relationship Management: store and manage current customer based on the database</h1>
+    </div>
+    <div class="decQuestion" id="1" style="margin-left: 21%;">
+      <h1>Customer Loyalty: make current customers stick with you</h1>
+    </div>
+    <div class="decQuestion" id="1" style="margin-left: 21%;">
+      <h1>Brand Advocacy: make current customers refer you to others</h1>
+    </div>
+  </div>
 
+  <div id="1_2_3" style="display: block">
+    <!-- <div class="decQuestion" style="margin-left: 10%;">
+      <h1>Congratulations you have come to the last part of the journey.</h1>
+    </div> -->
+     <div class="decQuestion" style="margin-left: 10%;">
+      <h1>Brand Advocacy</h1>
+    </div>
+    
+  </div>
+
+
+
+  
+
+  <div class="decQuestion" id="question" style="margin-left: 10%;display: none" >
     <!-- boost sale option -->
     <h1 id="1_1" style="display: none;"> To boost sales with current customers, businesses need to go through the following three steps:<br>
+
     Increase your brand awareness --> Offer incentives --> Fabilitate repeated purchases </h1>
     <h1 id="1_1_1" style="display: none;"> Step 3: Brand awareness</h1>
     <h1 id="1_1_1_1" style="display: none;"> Step 4: Offer incentives</h1>
@@ -77,7 +113,9 @@
     <h1 id="1_2" style="display: none;">If your decide to strengthen customer relationship,<br> there are three categories of marketing technologies you can adopt</h1>
     <h1 id="1_2_1" style="display: none;">CRM</h1>
     <h1 id="1_2_2" style="display: none;">Customer Loyalty</h1>
-	  <h1 id="1_2_3" style="display: block;">Brand Advocacy</h1>   		    
+	  <h1 id="1_2_3" style="display: none;">Brand Advocacy</h1>   		    
+  
+
   </div>
 <!-- </div> -->
 <!-- Understand part -->
@@ -1059,13 +1097,13 @@
       </div>
   </div>
 <!-- Brand Advocacy -->
-<div class="section" id="1_2_3_recommendation" style="display: block;">
+<div class="section" id="1_2_3_recommendation">
         <div class="panel-group">
           <div class="panel panel-default">
             <a data-toggle="collapse" href="#collapse1_ba">
               <div class="panel-heading">
                 <h4 class="panel-title" style="font-size: 30px">
-                    Social Media Marketing<div style="font-size: 20px;">create buzz on social platform </div>
+                    Social Media Marketing<div style="font-size: 20px;">Make your customers follow you on the social media, keep engagement and share with others</div>
                 </h4>
               </div>
               </a>
@@ -1125,7 +1163,7 @@
             <a data-toggle="collapse" href="#collapse2_ba">
               <div class="panel-heading">
                 <h4 class="panel-title" style="font-size: 30px">
-                    Customer referral program
+                    Customer referral program <div style="font-size: 20px;">Make your current customers recommend your products to their family and friends</div>
                 </h4>
               </div>
               </a>
@@ -1202,10 +1240,10 @@
 	
 
 		<div id="decButton" class="1_button" style="display: none;">
-			<button onclick="show_content('1_1')" style="width: 43%;"><span class="tip">Boost sales with current customers <div style="font-size: 15px">make current customers make more from you</div></span></button>
-			<button onclick="show_content('1_2')" style="width: 43%;"><span class="tips">Strengthen relationships with current customers<div style="font-size: 15px">make current customers stay with you and share your products with others</div></span></button>
+			<button onclick="show_content('1_1')" style="width: 43%;"><span class="tip">Boost sales <!-- <div style="font-size: 15px">make current customers make more from you</div> --></span></button>
+			<button onclick="show_content('1_2')" style="width: 43%;"><span class="tips">Strengthen relationships <!-- <div style="font-size: 15px">make current customers stay with you and share your products with others</div> --></span></button>
       <br>
-      <button onclick="window.location.href='understand.html'"><span class="postnewcar">Return</span></button>
+      <button onclick="window.location.href='understand1.html'"><span class="postnewcar">Return</span></button>
 		</div>
 
 		<div id="decButton" class="1_1_button" style="display: none;">
@@ -1233,11 +1271,11 @@
 
 		<div id="decButton" class="1_2_button" style="display: none;">
 
-      		<button onclick="show_content('1_2_1')" style="width: 25%;"><span class="postnewcar">Customer Relationship Management<div style="font-size: 15px">store and manage current customer based on the database</div></span></button> 
+      		<button onclick="show_content('1_2_1')" style="width: 25%;"><span class="postnewcar">Customer Relationship Management<!-- <div style="font-size: 15px">store and manage current customer based on the database</div> --></span></button> 
       		<!-- recommendation page-->
-      		<button onclick="show_content('1_2_2')" style="width: 25%;"><span class="postnewcar">Customer Loyalty<div style="font-size: 15px">make current customers stick with you</div></span></button>
+      		<button onclick="show_content('1_2_2')" style="width: 25%;"><span class="postnewcar">Customer Loyalty<!-- <div style="font-size: 15px">make current customers stick with you</div> --></span></button>
 
-      		<button onclick="show_content('1_2_3')" style="width: 25%"><span class="postnewcar">Brand Advocacy<div style="font-size: 15px">make current customers refer you to others</div></span></button>
+      		<button onclick="show_content('1_2_3')" style="width: 25%"><span class="postnewcar">Brand Advocacy<!-- <div style="font-size: 15px">make current customers refer you to others</div> --></span></button>
           <br>; 
       		<button onclick="return_content('1_2')"><span class="postnewcar">Return</span></button>
 		</div>
@@ -1259,13 +1297,12 @@
           <button onclick="return_content('1_2_2')"><span class="postnewcar">Return</span></button>
 		</div>
 
-		<div id="decButton" class="1_2_3_button" style="display: block;">
-
-		<!-- Social Media (create bust on social platform)  -->
-		<!-- Customer referral program -->
-      		<button onclick="window.location.href='decision_tree.html'"><span class="postnewcar">Keep Exploring</span></button>
-          <button onclick="window.location.href='final_stack.html'"><span class="postnewcar">View My new Stack</span></button>
-          <button onclick="return_content('1_2_3')"><span class="postnewcar">Return</span></button>
+		<div id="decButton" class="1_2_3_button">
+      <br>
+      <h3 class="text-center" style="font-family: 'Lato Regular'"> Congratulations, you have come to the end of your decision journey. </h3>
+      <br>
+      <button onclick="window.location.href='final_stack.html'"><span class="postnewcar">View My new Stack</span></button>
+      <button onclick="return_content('1_2_3')"><span class="postnewcar">Return</span></button>
 		</div>
 
 
@@ -1290,7 +1327,7 @@
 			<li role="presentation"><a href="#/">DECISION TREE</a></li>
 			<li role="presentation"><a href="contact.html">CONTACT US</a></li>
 		</ul>
-		<p style="padding-top: 1%; margin-bottom: 1%">"Our Motto"</p>
+		<p style="padding-top: 1%; margin-bottom: 1%">"Your 24/7 personal martech advisor, just a few clicks away."</p>
 		 <img style="padding-top: 1%;margin-top: 1%" src="img/line.png" alt="line"> <br>
 		 <div class="bottomsocial">
 		 	<a href="#"><i class="fa fa-facebook"></i></a>
