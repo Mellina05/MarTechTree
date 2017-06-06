@@ -856,7 +856,7 @@ td{
 .finalStack{
   display: block;
   width: 90%;
-  height: 100px;
+  height: 120px;
   /*border: solid 2px;*/
   margin-top: 2%;
   margin-bottom: 2%;
@@ -871,7 +871,7 @@ td{
 .stack{
 	display: block;
 	width: 90%;
-	height: 100px;
+	height: 120px;
 	/*border: solid 2px;*/
 	margin-top: 2%;
 	margin-bottom: 2%;
@@ -886,9 +886,9 @@ td{
 	/*border-right: dashed 2px #C59E47;*/
   font-family: 'Lato Regular';
 	padding: 2%;
-  width: 35%;
-	text-align:left;
-	height: 100px;
+  width: 31%;
+	text-align:center;
+	height: 120px;
 	vertical-align: middle;
   background-color: #f3bf30;
   border-top-left-radius: 10px;
@@ -901,7 +901,7 @@ td{
 	border-radius: 10px;
 	padding:2%;
 	text-align: center;
-	height: 100px;
+	height: 120px;
 	vertical-align: middle;
 	display: none;
   width: 20%;
