@@ -143,7 +143,13 @@ function added(id){
   console.log(toChange);
   if(toChange == "Add to Stack"){
     document.getElementById(id).innerHTML = "ADDED to Stack";
+    document.getElementById(id).parentElement.style.backgroundColor = '#f3bf30';
+    document.getElementById(id).style.color = 'white';
+
   }
-  else
+  else{
     document.getElementById(id).innerHTML = "Add to Stack";
+    document.getElementById(id).parentElement.style.backgroundColor = '';
+    document.getElementById(id).style.color = '';
+  }  
 }
