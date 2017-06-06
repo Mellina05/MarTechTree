@@ -57,7 +57,7 @@
   					<div class="col-6 col-sm-3 head">Data Analytics
   					<img src="img/bars/data.png" style="height: 80%; width: 35%">
   					</div>
-  					<div class="col-6 col-sm-3 body" style="display: block;background-image: url('img/tableau.png');background-size: 100% 60%;background-repeat:no-repeat;background-position: center;"></div>
+  					<a href="https://www.tableau.com/about/contact"><div class="col-6 col-sm-3 body" data-toggle="tooltip" data-placement="top" title="Click to Contact" style="display: block;background-image: url('img/tableau.png');background-size: 100% 60%;background-repeat:no-repeat;background-position: center;"></div></a>
   					<div class="col-6 col-sm-3 body">Google Analytics</div>
   					<a href="sampleproduct.html"><div class="col-6 col-sm-3 body" id="salesforce">Salesforce</div></a>
 				</div>
@@ -87,7 +87,7 @@
   					<div class="col-6 col-sm-3 head">Sales Conversion
   					<img src="img/bars/conversion.png" style="height: 80%; width: 35%">
   					</div>
-  					<div class="col-6 col-sm-3 body" style="display: block;background-image: url('img/hootsuite.png');background-size: 100% 50%;background-repeat:no-repeat;background-position: center;"></div>
+  					<a href="https://hootsuite.com/about/contact-us"><div class="col-6 col-sm-3 body" data-toggle="tooltip" data-placement="top" title="Click to Contact" style="display: block;background-image: url('img/hootsuite.png');background-size: 100% 50%;background-repeat:no-repeat;background-position: center;"></div></a>
   					<div class="col-6 col-sm-3 body">HIGHSPOT</div>
   					<div class="col-6 col-sm-3 body">MarTech 3</div>
 				</div>
@@ -136,7 +136,12 @@
 
 <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
 <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-<script>
+<script type="text/javascript">
+	$(function () {
+  $('[data-toggle="tooltip"]').tooltip()
+})
+</script>
+<!-- <script>
   $( function() {
     var availableMarTechs = {
     	name: ["Lattice","Marketo","Salesforce","Fullcircle","Google Analytics","MOZ","Demandbase","PTI","Salesloft","GaggleAMP","viduard","buffer","brightTALK","PR Newswire","SnapApp","KnowledgeTree","Rollup","Yesware","ringDNA"],
@@ -157,7 +162,7 @@
        }
     });
   } );
-  </script>
+  </script> -->
 
 <script type="text/javascript" src="source/bootstrap-3.3.6-dist/js/jquery.js"></script>
 <script type="text/javascript" src="source/js/isotope.js"></script>
